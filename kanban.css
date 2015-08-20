@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0; border: 0; outline: 0; list-style:none; text-decoration:none;}
+.clearfix:after {
+	     visibility: hidden;
+	     display: block;
+	     font-size: 0;
+	     content: " ";
+	     clear: both;
+	     height: 0;
+	     }
+	.clearfix { display: inline-block; }
+	/* start commented backslash hack \*/
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
+	/* close commented backslash hack */
+
+.body-board{
+	position: relative;
+	height: 100%;
+	width: 100%;
+    background-color: #444;
+    overflow: hidden;
+}
+.board-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #FFF;
+    z-index: -1;
+}
+#header{
+	height: 30px;
+    position: relative;
+    background-color: #333;
+    line-height: 1em;
+}
+.header-right{
+  position: absolute;
+  right: 0;
+  height: 30px;
+  width: 400px;
+  color: white;
+  font-size: 17px;
+  padding-top: 5px;
+}
+#board-content{
+	background-color: #FFF;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    bottom: 30px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.board-content-inner{
+    padding: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+#board-footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 30px;
+}
+#board-table{
+    height: 560px;
+    width: 1343px;
+    padding: 0px; 
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid grey;
+    
+}
+thead th{
+    line-height: 40px;
+}
+ a{
+    font-size: 18px;
+}
+thead .fa{
+    position: relative;
+    color: rgba(27, 119, 206, 0.91);
+    font-size: 35px;
+    left:100px;
+    top:7px;
+}
+#toolbar {
+    background-color: #333;
+    height: 30px;
+    position: relative;
+}
+#toolbar-table{
+    position: absolute;
+    line-height: 30px;
+    color: white;
+    height: inherit;
+    font-weight: bold;
+    font-size: 16px;
+}
+#toolbar-table th .fa{
+    position: relative;
+    font-size: 18px;
+    left: -13px;
+}

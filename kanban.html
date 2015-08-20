@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>My first board</title>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="kanban.css">
+</head>
+<body class="body-board">
+  <div class="board-background"></div>	
+  <div id="header">
+    <div class="header-right">
+      <i class="fa fa-cog"></i>
+      <span class="administration">Administration</span>
+      <i class="fa fa-user" style="margin-left:65px;"></i>
+      <span class="userFullName">User Name</span>
+    </div>
+    <select name="board" style="height:26px; background:rgba(255, 255, 255, 0.9); margin-top:2px; margin-left:200px;">
+        <option value="My first board" selected="selected"><a>My first board</a></option>
+    </select>
+  </div>
+  <div id="board-content">
+  	<div class="board-content-inner">
+       <table id="board-table">
+          <thead><tr>
+	         <th><a>To-do</a> <i class="fa fa-plus" style="margin-right:-38px;" ></i> </th>
+	         <th><a>Do-today</a> <i class="fa fa-plus" style="margin-right:-15px;"></i> </th>
+	         <th><a>In progress</a> <i class="fa fa-plus"></i> </th>
+	         <th><a>Done </a> <i class="fa fa-plus" style="margin-right:-40px;" ></i> </th>
+         </tr></thead>
+      <tbody>
+      	  <tr>
+      	  	<th></th><th></th><th></th><th></th>
+      	  </tr>
+      </tbody>
+       </table>
+  	</div>
+  </div>
+  <div id="board-footer">
+    <div id="toolbar">
+       <table id="toolbar-table">
+          <tr>
+             <th style="width:100px;"><i class="fa fa-clock-o"></i>Timer</th>
+             <th style="width:110px;"><i class="fa fa-file-text-o"></i>Reports</th>
+             <th style="width:50px; height:30px;"><i class="fa fa-bars" style="font-size:24px; margin-left:26px;"></i></th>
+             <th style="width:770px;"></th>
+             <th style="width:170px;"><i class="fa fa-star" style="color:rgb(255, 172, 0);"></i>Get Premium</th>
+             <th style="width:140px;">Help & feedback</th>
+          </tr>
+       </table>
+      </div>
+    </div>
+</body>
+</html>
