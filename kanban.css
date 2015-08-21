@@ -12,6 +12,17 @@
 	* html .clearfix { height: 1%; }
 	.clearfix { display: block; }
 	/* close commented backslash hack */
+h3{
+    float: left;
+    margin-top: 8px;
+    color:#E8810F;;
+}
+img{
+    float: left;
+    height: 30px;
+    width: 40px;
+    color: white;,
+}
 
 .body-board{
     position: relative;
@@ -44,6 +55,9 @@
    font-weight: bold;
    font-size: 16px;
    background-color: rgba(255, 255, 255, 0.91);
+}
+.header-left h3 a{
+    color:white;
 }
 .header-right{
   float: right;
