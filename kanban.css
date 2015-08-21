@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; border: 0; outline: 0; list-style:none; text-decoration:none;}
+*{margin: 0; padding: 0; border: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
 .clearfix:after {
 	     visibility: hidden;
 	     display: block;
@@ -14,9 +14,9 @@
 	/* close commented backslash hack */
 
 .body-board{
-	position: relative;
-	height: 100%;
-	width: 100%;
+    position: relative;
+    height: 100%;
+    width: 100%;
     background-color: #444;
     overflow: hidden;
 }
@@ -30,41 +30,61 @@
     z-index: -1;
 }
 #header{
-	height: 30px;
-    position: relative;
+    height: 30px;
     background-color: #333;
     line-height: 1em;
+    width: 100%;
+}
+.header-left{
+    float: left;
+    height: 30px;
+    width: 350px;
+}
+.header-left select{
+   font-weight: bold;
+   font-size: 16px;
+   background-color: rgba(255, 255, 255, 0.91);
 }
 .header-right{
-  position: absolute;
-  right: 0;
+  float: right;
   height: 30px;
-  width: 400px;
+  width: 350px;
   color: white;
   font-size: 17px;
-  padding-top: 5px;
+}
+.fa-cog{
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 21px;
+}
+.fa-user{
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: 21px;
+}
+.fa-caret-down{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.administration:hover, .userFullName:hover a{
+    text-decoration: underline;
+    cursor: hand;
+}
+.administration a, .userFullName a{
+    font-size: 16px;
 }
 #board-content{
-	background-color: #FFF;
     position: absolute;
     left: 0;
     right: 0;
     top: 30px;
     bottom: 30px;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    background-color: rgba(255, 192, 203, 0.29);
 }
 .board-content-inner{
     padding: 10px;
-    vertical-align: top;
     display: inline-block;
-}
-#board-footer{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 30px;
 }
 #board-table{
     height: 560px;
@@ -73,39 +93,55 @@
     table-layout: fixed;
     border-collapse: collapse;
 }
-
-th{
-    border: 1px solid grey;
-    
+#board-table th{
+    border: 1px solid grey; 
 }
 thead th{
     line-height: 40px;
 }
- a{
+#board-table a{
     font-size: 18px;
 }
-thead .fa{
-    position: relative;
-    color: rgba(27, 119, 206, 0.91);
-    font-size: 35px;
-    left:100px;
-    top:7px;
+
+
+
+
+#board-footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 30px;
 }
-#toolbar {
+#toolbar{
     background-color: #333;
     height: 30px;
-    position: relative;
 }
 #toolbar-table{
-    position: absolute;
     line-height: 30px;
     color: white;
     height: inherit;
     font-weight: bold;
     font-size: 16px;
 }
-#toolbar-table th .fa{
-    position: relative;
-    font-size: 18px;
-    left: -13px;
+#toolbar-table th{
+    border-right: 1px solid grey;
+}
+#toolbar-table th:hover{
+    cursor: hand;
+}
+.fa-star{
+    color:rgb(255, 172, 0);
+    margin-right: 6px;
+}
+.fa-clock-o, .fa-file-text-o{
+    margin-right: 5px;
+    font-size: 19px;
+}
+.fa-plus{
+    color:rgba(27, 119, 206, 0.91);
+    float: right;
+    font-size: 27px;
+    margin-top: 8px;
+    margin-right: 5px;
 }
