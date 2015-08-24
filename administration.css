@@ -1,0 +1,80 @@
+*{margin: 0; padding: 0; border: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
+.clearfix:after {
+	     visibility: hidden;
+	     display: block;
+	     font-size: 0;
+	     content: " ";
+	     clear: both;
+	     height: 0;
+	     }
+	.clearfix { display: inline-block; }
+	/* start commented backslash hack \*/
+	* html .clearfix { height: 1%; }
+	.clearfix { display: block; }
+	/* close commented backslash hack */
+   h3{
+    float: left;
+    margin-top: 8px;
+    color:#E8810F;;
+   }
+  img{
+    float: left;
+    height: 30px;
+    width: 40px;
+    color: white;,
+   }
+
+#adm-header{
+  position: absolute;
+  top:0;
+  height: 30px;
+  background-color: #333;
+  line-height: 1em;
+  width: 100%;
+}
+.header-left{
+    float: left;
+    height: 30px;
+    width: 350px;
+}
+.header-left select{
+   font-weight: bold;
+   font-size: 16px;
+   background-color: rgba(255, 255, 255, 0.91);
+}
+.header-left h3 a{
+    color:white;
+}
+.header-right{
+  float: right;
+  height: 30px;
+  width: 350px;
+  color: white;
+  font-size: 17px;
+}
+.fa-cog{
+    margin-left: 20px;
+    margin-top: 2px;
+    font-size: 21px;
+}
+.fa-user{
+    margin-left: 40px;
+    margin-top: 2px;
+    font-size: 21px;
+}
+.fa-caret-down{
+    margin-top: 2px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.administration:hover, .userFullName:hover a{
+    text-decoration: underline;
+    cursor: hand;
+}
+#adm-content{
+	position: absolute;
+	top: 30px;
+	height: 100%;
+	width: 100%;
+	background-color: #d3e8f2;
+}

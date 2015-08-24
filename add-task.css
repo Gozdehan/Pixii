@@ -12,6 +12,11 @@
 	* html .clearfix { height: 1%; }
 	.clearfix { display: block; }
 	/* close commented backslash hack */
+.task-page-background{
+	background-color: rgba(0, 0, 0, 0.18);;
+	height: 100%;
+	width: 100%;
+}
 .task-page{
 	position: absolute;
 	top:50%;
@@ -33,7 +38,6 @@
 
 .task-create{
 	float: left;
-	margin-top: 8px;
 }
 .task-create a:first-child{
 	color:white;
@@ -49,6 +53,14 @@
 	color: black;
 	text-decoration: underline;
 	font-weight: bold;
+}
+.task-create a:hover{
+	color: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	padding: 6px;
+	background-color: black;
+	opacity: 0.8;
 }
 .fa-times{
 	float: right;
@@ -71,4 +83,14 @@ h3{
 	color: white;
 	margin-left: 10px;
 	font-size: 16px;
+}
+label{
+	font-weight: bold;
+}
+button{
+	font-weight: bold;
+}
+button:hover{
+	opacity: 0.9;
+	cursor: hand;
 }

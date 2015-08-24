@@ -28,7 +28,6 @@ img{
     position: relative;
     height: 100%;
     width: 100%;
-    background-color: #444;
     overflow: hidden;
 }
 .board-background {
@@ -41,6 +40,8 @@ img{
     z-index: -1;
 }
 #header{
+    position: absolute;
+    top:0;
     height: 30px;
     background-color: #333;
     line-height: 1em;
@@ -87,6 +88,8 @@ img{
 }
 .administration a, .userFullName a{
     font-size: 16px;
+    text-decoration: none;
+    color: white;
 }
 #board-content{
     position: absolute;
@@ -94,7 +97,7 @@ img{
     right: 0;
     top: 30px;
     bottom: 30px;
-    background-color: rgba(255, 192, 203, 0.29);
+   /* background-color: rgba(255, 192, 203, 0.29);*/
 }
 .board-content-inner{
     padding: 10px;

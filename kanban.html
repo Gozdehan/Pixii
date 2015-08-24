@@ -7,27 +7,55 @@
 <link rel="stylesheet" type="text/css" href="kanban.css">
 <link rel="stylesheet" type="text/css" href="add-task.css">
 <link rel="stylesheet" type="text/css" href="administration.css">
-
-
 </head>
 
 <body class="body-board">
-  <div class="board-background"></div>	
+  <div class="board-background"></div>
+  <div class="task-page-background">	
   <div class="task-page">
     <h3>Add task</h3>
     <i class="fa fa-expand"></i>
     <i class="fa fa-times"></i>
     <div class="task-page-inner">
-       <div class="task-create" style="height:45px; line-height:45px;">
+       <span class="task-create" style="height:45px; line-height:45px;">
           <a href="#">General</a>
           <a href="#">Dates</a>
           <a href="#">Subtasks</a>
-       </div>
+       </span>
        <div class="clearfix"></div>
-       <label style="margin-left:15px;">Name:</label>
-
+       <form>
+          <label style="margin-left:15px; font-size:14px;">Name</label><br>
+          <input type="text" name="text" style="height: 40px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <label style="display: block; margin-top:-8px; margin-left:15px; font-size:14px;">Description</label><br>
+          <input type="textarea" name="description" style="margin-top:-18px; height: 70px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <label style="display: block; margin-top:-8px; margin-left:15px; font-size:14px;">Labels</label><br>
+          <input type="text" placeholder="Add labels..." style="margin-top:-18px; height: 28px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <label style="margin-left:15px; font-size:14px;">Color</label><br>
+          <select name="color" style="padding:2px; width:215px; margin-left: 14px; border:1px solid lightgray">
+            <option value="yellow" style="background:rgba(255, 255, 0, 0.30);" selected="selected">Yellow</option>
+            <option value="Green" style="background:rgba(0, 128, 0, 0.30);">Green</option>
+            <option value="Blue" style="background:rgba(0, 0, 255, 0.30);" >Blue</option>
+            <option value="Red" style="background:rgba(255, 0, 0, 0.30);" >Red</option>
+            <option value="Orange" style="background:rgba(255, 165, 0, 0.30);">Orange</option>
+            <option value="Purple" style="background:rgba(128, 0, 128, 0.30);">Purple</option>
+            <option value="Magenta" style="background:rgba(255, 0, 255, 0.30);">Magenta</option>
+            <option value="Cyan" style="background:rgba(0, 255, 255, 0.30);">Cyan</option>
+          </select>
+          <label style="display:block; margin-left:242px; margin-top:-43px; font-size:14px;">Responsible</label><br>
+             <select name="responsible" style="display:block; margin-left:242px; margin-top:-19px; padding:2px; width:210px; border:1px solid lightgray;">
+              <option value="(none)" selected="selected">(none)</option>
+             </select><br>
+          <label style="margin-left:15px; font-size:14px;">Time spent</label><br>
+          <input type="text" name="timespent" placeholder="0h" style="margin-left: 15px; border:1px solid lightgray; width:50px; padding:3px; text-align:center;">
+          <label  style="display:block; margin-left:242px; margin-top:-43px; font-size:14px;">Time estimate</label><br>
+          <input type="text" name="estimate" placeholder="0h" style=" margin-left:242px; margin-top:-19px; border:1px solid lightgray; width:50px; padding:3px; text-align:center;"><br><br>
+          
+          <button style="margin-left: 12px; margin-top: 12px; padding: 7px; background: white; border: 1px solid lightgray; border-radius: 6px;">Save & close</button>
+          <button style="background: white; border: 1px solid lightgray; border-radius: 6px; padding: 7px; margin-left: 8px;">Save & add more</button>
+          <button style="background: white; padding: 7px; border: 1px solid lightgray; border-radius: 6px; margin-left: 140px">Cancel</button>
+       </form>
     </div>
-  </div>
+  </div></div>
   <div id="header">
      <div class="header-left">
      <img src="eye.png" style="margin-left: 30px;"> 
@@ -40,7 +68,7 @@
      </div>
      <div class="header-right">
        <i class="fa fa-cog"></i>
-       <span class="administration"><a>Administration</a></span>
+       <span class="administration"><a href="administration.html">Administration</a></span>
        <i class="fa fa-user"></i>
        <span class="userFullName"><a>User Name</a><i class="fa fa-caret-down"></i></span>
      </div>
