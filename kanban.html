@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <title>My first board</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="kanban.css">
@@ -17,19 +18,21 @@
     <i class="fa fa-expand"></i>
     <i class="fa fa-times"></i>
     <div class="task-page-inner">
-       <span class="task-create" style="height:45px; line-height:45px;">
-          <a href="#">General</a>
-          <a href="#">Dates</a>
-          <a href="#">Subtasks</a>
-       </span>
+       <div class="task-create" style="height:45px; line-height:45px;">
+          <a href="#" data-hedef="general-box">General</a>
+          <a href="#" data-hedef="dates-box">Dates</a>
+          <a href="#" data-hedef="subtasks-box">Subtasks</a>
+       </div>
        <div class="clearfix"></div>
+
+       <div class="general-box">
        <form>
           <label style="margin-left:15px; font-size:14px;">Name</label><br>
-          <input type="text" name="text" style="height: 40px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <textarea style="height: 40px; width: 430px; margin-left: 14px; border:1px solid lightgray;"></textarea><br><br>
           <label style="display: block; margin-top:-8px; margin-left:15px; font-size:14px;">Description</label><br>
-          <input type="textarea" name="description" style="margin-top:-18px; height: 70px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <textarea style="margin-top:-18px; height: 70px; width: 430px; margin-left: 14px; border:1px solid lightgray;"></textarea><br><br>
           <label style="display: block; margin-top:-8px; margin-left:15px; font-size:14px;">Labels</label><br>
-          <input type="text" placeholder="Add labels..." style="margin-top:-18px; height: 28px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
+          <input type="text" placeholder=" Add labels..." style="margin-top:-18px; height: 28px; width: 430px; margin-left: 14px; border:1px solid lightgray;"><br><br>
           <label style="margin-left:15px; font-size:14px;">Color</label><br>
           <select name="color" style="padding:2px; width:215px; margin-left: 14px; border:1px solid lightgray">
             <option value="yellow" style="background:rgba(255, 255, 0, 0.30);" selected="selected">Yellow</option>
@@ -50,11 +53,56 @@
           <label  style="display:block; margin-left:242px; margin-top:-43px; font-size:14px;">Time estimate</label><br>
           <input type="text" name="estimate" placeholder="0h" style=" margin-left:242px; margin-top:-19px; border:1px solid lightgray; width:50px; padding:3px; text-align:center;"><br><br>
           
-          <button style="margin-left: 12px; margin-top: 12px; padding: 7px; background: white; border: 1px solid lightgray; border-radius: 6px;">Save & close</button>
+          <button data-name="saveClose" style="margin-left: 12px; margin-top: 12px; padding: 7px; background: white; border: 1px solid lightgray; border-radius: 6px;">Save & close</button>
+          <button data-name="saveMore" style="background: white; border: 1px solid lightgray; border-radius: 6px; padding: 7px; margin-left: 8px;">Save & add more</button>
+          <button data-name="cancel" style="background: white; padding: 7px; border: 1px solid lightgray; border-radius: 6px; margin-left: 140px">Cancel</button>
+       </form></div>
+      
+
+      <div class="dates-box">
+         <form>
+          <fieldset>
+            <legend>Add due date</legend>
+              <ul>
+                <li>Date<i class="fa fa-info-circle"></i><br>
+                 <input type="text" style="width:100px; padding:2px;" placeholder="yyyy-mm-dd"><i class="fa fa-calendar"></i>
+                </li>
+                <li>Time<i class="fa fa-info-circle"></i><br>
+                  <input type="text" style="width:68px; padding:2px;">
+                </li>
+                <li>Target column<i class="fa fa-info-circle"></i><br>
+                   <select name="target" style="padding:2px;">
+                    <option value="dotoday">Do today</option>
+                    <option value="progress">In progress</option>
+                     <option value="Done" selected="selected">Done</option>
+                   </select>
+                </li>
+                <li><button>Add</button></li>
+              </ul>
+          </fieldset>
+          <button style="margin-left: 12px; padding: 7px; background: white; border: 1px solid lightgray; border-radius: 6px;">Save & close</button>
           <button style="background: white; border: 1px solid lightgray; border-radius: 6px; padding: 7px; margin-left: 8px;">Save & add more</button>
           <button style="background: white; padding: 7px; border: 1px solid lightgray; border-radius: 6px; margin-left: 140px">Cancel</button>
-       </form>
+         </form>
+      </div>
+
+      <div class="subtasks-box">
+        <form>
+           <fieldset style="height:60px;">
+             <legend>Add subtask</legend>
+             <input type="text" style="margin-top: 5;margin-left: 5;height: 27px;width: 360px;">
+             <button>Add</button>
+           </fieldset>
+
+          <button style="margin-left: 12px; padding: 7px; background: white; border: 1px solid lightgray; border-radius: 6px;">Save & close</button>
+          <button style="background: white; border: 1px solid lightgray; border-radius: 6px; padding: 7px; margin-left: 8px;">Save & add more</button>
+          <button style="background: white; padding: 7px; border: 1px solid lightgray; border-radius: 6px; margin-left: 140px">Cancel</button>
+        </form>
+      </div>
+
     </div>
+
+  </div>
   </div></div>
   <div id="header">
      <div class="header-left">
@@ -104,6 +152,6 @@
        </table>
     </div>
   </div>
-    
+    <script src="kanban.js"></script>
 </body>
 </html>

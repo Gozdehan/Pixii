@@ -16,6 +16,7 @@
 	background-color: rgba(0, 0, 0, 0.18);;
 	height: 100%;
 	width: 100%;
+	display: none;
 }
 .task-page{
 	position: absolute;
@@ -32,8 +33,7 @@
 .task-page-inner{
 	background-color: #fff9d7;
 	margin: 32px 2px 2px 2px;
-	height: 448px;
-	width: 456px;
+	height: 93%;
 }
 
 .task-create{
@@ -53,6 +53,7 @@
 	color: black;
 	text-decoration: underline;
 	font-weight: bold;
+	
 }
 .task-create a:hover{
 	color: white;
@@ -62,6 +63,7 @@
 	background-color: black;
 	opacity: 0.8;
 }
+
 .fa-times{
 	float: right;
 	color: white;
@@ -79,7 +81,7 @@
 .fa-expand, .fa-times:hover{
 	cursor: hand;
 }
-h3{
+.task-page h3{
 	color: white;
 	margin-left: 10px;
 	font-size: 16px;
@@ -87,10 +89,73 @@ h3{
 label{
 	font-weight: bold;
 }
+.general-box button{
+	font-weight: bold;
+	margin-top: 10px;
+}
 button{
 	font-weight: bold;
+	margin-top: 280px;
 }
 button:hover{
 	opacity: 0.9;
 	cursor: hand;
+}
+fieldset{
+	margin: 10px 10px 5px;
+	border: 1px solid lightgray;
+	height: 64px;
+}
+fieldset ul li{
+	float: left;
+	font-size: 13px;
+	margin-left: 25px;
+}
+fieldset ul li:first-child{
+	margin-left: 10px;
+}
+fieldset ul li:last-child button{
+	padding: 4px;
+	border: 1px solid lightgray;
+	background:white;
+	border-radius: 3px;
+	width: 50px;
+	margin-left: -14px;
+	margin-top: 13px;
+}
+.subtasks-box fieldset button{
+	padding: 4px;
+	border: 1px solid lightgray;
+	background:white;
+	border-radius: 3px;
+	width: 50px;
+	margin-left: 2px;
+	margin-top: 8px;
+}
+.fa-info-circle{
+	margin-left: 2px;
+}
+legend{
+	margin-left: 3px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.fa-calendar{
+ color: red;
+ margin-left: -18px;
+ font-size: 16px;
+}
+
+
+.general-box{
+	display: block;
+}
+
+.dates-box{
+	display: none;
+}
+
+.subtasks-box{
+	display: none;
 }

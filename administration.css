@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0; border: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
+*{margin: 0; padding: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
 .clearfix:after {
 	     visibility: hidden;
 	     display: block;
@@ -67,14 +67,59 @@
     margin-left: 5px;
     font-size: 20px;
 }
+.administration a, .userFullName a{
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
 .administration:hover, .userFullName:hover a{
     text-decoration: underline;
     cursor: hand;
 }
 #adm-content{
-	position: absolute;
+	position: relative;
 	top: 30px;
-	height: 100%;
+	height: 613px;
 	width: 100%;
 	background-color: #d3e8f2;
+}
+.adm-content-inner{
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  width:950px;
+  margin-left: 200px;
+  background: white;
+  border: 1px solid lightgray;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.adm-content-inner h2, .adm-content-inner h3{
+      color: rgba(0, 0, 0, 0.79);
+      margin-left: 20px;
+      margin-top: 30px;
+}
+.adm-content-inner button{
+  padding: 6px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  margin-left: 22px;
+  margin-top: 10px;
+  background: rgba(128, 128, 128, 0.16);
+}
+.adm-content-inner button:hover{
+  cursor: hand;
+  opacity: 0.9;
+}
+.box{
+  padding: 10px;
+  background: #d3e8f2;
+  border-radius: 3px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-color: #bce8f1;
+}
+.box a{
+  color:#3a87ad;
+  font-size: 14px;
 }
