@@ -13,9 +13,11 @@
 	.clearfix { display: block; }
 	/* close commented backslash hack */
 .task-page-background{
-	background-color: rgba(0, 0, 0, 0.18);;
+	background-color: rgba(0, 0, 0, 0.18);
 	height: 100%;
 	width: 100%;
+	position: relative;
+    z-index: 999999;
 	display: none;
 }
 .task-page{
@@ -35,33 +37,35 @@
 	margin: 32px 2px 2px 2px;
 	height: 93%;
 }
-
-.task-create{
+.task-create ul li{
 	float: left;
 }
-.task-create a:first-child{
+.selected{
 	color:white;
 	border: 1px solid black;
-	border-radius: 3px;
-	padding: 6px;
+	border-radius: 5px;
+	padding: 5px;
 	background-color: black;
 	opacity: 0.8;
 	text-decoration: none;
 }
-.task-create a{
+.task-create li a{
 	margin-left: 15px;
+	font-weight: bold;
+}
+a{
 	color: black;
 	text-decoration: underline;
-	font-weight: bold;
-	
 }
-.task-create a:hover{
+
+.task-create ul li:hover a{
 	color: white;
 	border: 1px solid black;
-	border-radius: 3px;
-	padding: 6px;
+	border-radius: 5px;
+	padding: 5px;
 	background-color: black;
 	opacity: 0.8;
+	text-decoration: underline;
 }
 
 .fa-times{
@@ -71,14 +75,14 @@
 	margin-right: 5px;
 	margin-top: 5px;
 }
-.fa-expand{
-	float: left;
+.fa-expand, .fa-compress{
+    float: right;
 	color: white;
 	font-size: 18px;
     margin-top: 7px;
-    margin-left: 340px;
+    margin-right: 10px;
 }
-.fa-expand, .fa-times:hover{
+.fa-expand, .fa-times, .fa-compress:hover{
 	cursor: hand;
 }
 .task-page h3{

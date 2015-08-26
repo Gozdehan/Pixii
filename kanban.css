@@ -113,6 +113,10 @@ img{
 #board-table th{
     border: 1px solid grey; 
 }
+
+#board-table a, .header-left a{
+    text-decoration: none;
+}
 thead th{
     line-height: 40px;
 }
@@ -157,4 +161,7 @@ thead th{
     font-size: 27px;
     margin-top: 8px;
     margin-right: 5px;
+}
+.fa-plus:hover{
+    cursor: hand;
 }
