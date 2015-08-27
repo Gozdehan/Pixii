@@ -99,12 +99,18 @@ $(".buyut-kucult").click(function(){
 
 $("button").click(function(){
    var buton = $(this).attr("data-name");
+   concole.log(buton);
 
    if(buton=="cancel"){
      $(".task-page-background").css({
-		display: "none"
-	});
+    display: "none"
+  });
    }
+   /*else{
+    $(".task-page-background").css({
+    display: "block"
+  });
+   }*/
 });
 
 /*$("#board-table thead th").click(function(){
@@ -115,4 +121,17 @@ $("button").click(function(){
 });*/
 
 
-	  
+	 $(".open-close").click(function(){
+      if("none" == $(".submenu").css("display")){
+        $(".submenu").css({
+          display:"block"
+        });
+     } 
+     else if("block" == $(".submenu").css("display")){
+        $(".submenu").css({
+          display:"none"
+        });
+      }
+   });
+
+   

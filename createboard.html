@@ -1,21 +1,22 @@
 <html>
 <head>
 <meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="createboard.css">
 </head>
-<body>
+<body class="cB-body">
  
 <div class="alert-box-background">
 
     <div class="alert-box">
     <div class="alert-box-header">
-    <h4>Alert</h4><i class="fa fa-times"></i>
+    <h4>Alert</h4><i class="fa fa-times" data-exit="exit"></i>
     </div>
     <div class="alert-box-content">
       <p>Name is required</p><br><hr>
-      <button>OK</button>
+      <button data-exit="ok">OK</button>
     </div>
     
   </div>
@@ -58,5 +59,8 @@
   </div>
  </div>
 </div>
+
+<script src="createboard.js"></script>
+   
 </body>
 </html>
