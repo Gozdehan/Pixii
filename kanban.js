@@ -97,21 +97,17 @@ $(".buyut-kucult").click(function(){
 });
 
 
-$("button").click(function(){
-   var buton = $(this).attr("data-name");
-   concole.log(buton);
-
-   if(buton=="cancel"){
+   $(".cancel").click(function(){
      $(".task-page-background").css({
     display: "none"
   });
-   }
-   /*else{
-    $(".task-page-background").css({
-    display: "block"
-  });
-   }*/
-});
+
+   });
+
+   $(".saveClose").click(function(){
+     alert("veri okunup kapatılacak");
+   });
+
 
 /*$("#board-table thead th").click(function(){
     $(this).css({
@@ -133,5 +129,13 @@ $("button").click(function(){
         });
       }
    });
+
+  /*$(".body-board").click(function(){
+    if("block" == $(".submenu").css("display")){
+     $(".submenu").css({
+          display:"none"
+        });
+   }
+   });*/
 
    
