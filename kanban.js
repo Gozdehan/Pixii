@@ -104,9 +104,13 @@ $(".buyut-kucult").click(function(){
 
    });
 
-   $(".saveClose").click(function(){
+  /* $(".saveClose").click(function(){
      alert("veri okunup kapatılacak");
    });
+
+   $(".saveMore").click(function(){
+     alert("xxx");
+   }); */
 
 
 /*$("#board-table thead th").click(function(){
@@ -138,4 +142,23 @@ $(".buyut-kucult").click(function(){
    }
    });*/
 
-   
+   $(document).ready(function(){
+     var index = null;
+     
+
+
+    $(".fa-plus").click(function(){
+       index = $(this).closest("th").index()
+       console.log(index)
+   });
+
+
+     $(".saveClose").click(function(){
+      
+        $("#board-table tbody th:nth-child(1)").append("deneme1");
+        return false;     
+
+     });
+     
+   });
+
