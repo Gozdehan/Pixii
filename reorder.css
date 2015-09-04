@@ -81,12 +81,12 @@ img{
     margin-left: 5px;
     font-size: 20px;
 }
-.administration a, .userFullName a{
+.administration a, .open-close a{
     font-size: 16px;
     text-decoration: none;
     color: white;
 }
-.administration:hover, .userFullName:hover a{
+.administration:hover, .open-close:hover a{
     text-decoration: underline;
     cursor: hand;
 }
@@ -122,13 +122,13 @@ img{
       margin-top: 6px;
 }
 .well{
-  margin-top: 20px;
+  margin-top: 8px;
   margin-left: 20px;
   width: 600px;
   border: 1px solid rgba(211, 211, 211, 0);
   border-radius:7px;
   background-color: rgba(128, 128, 128, 0.09);
-  padding-bottom: 22px;
+  padding-bottom: 18px;
   padding-right: 15px;
   border: 1px solid #e3e3e3;
 }
@@ -141,19 +141,46 @@ img{
   font-size: 14px;
 }
 .saveChanges{
-	color: white;
-	border:1px solid #006fcc;
+	  color: white;
+	  border:1px solid #006fcc;
     background-color: #006fcc;
     border-radius: 4px;
     margin-left: 20px;
-    padding: 10px;
+    padding: 9px;
     font-size: 15px;
 }
 .saveChanges:hover{
 	background: #04c;
 	cursor: hand;
 }
-
+.submenu{
+    float: right;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    display: none;
+    z-index:4;
+    right: 3px;
+    padding: 3px 0;
+    position: absolute;
+    top: 33px;
+}
+.submenu li a {
+    color: #000;
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 7px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    }
+    .submenu li a:hover{
+        background: #08C;
+        color: white;
+    }
 
 
 

@@ -174,3 +174,31 @@
   cursor: hand;
   background: #04c;
 }
+.submenu{
+    float: right;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    display: none;
+    z-index:4;
+    right: 3px;
+    padding: 3px 0;
+    position: absolute;
+    top: 33px;
+}
+.submenu li a {
+    color: #000;
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 7px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    }
+    .submenu li a:hover{
+        background: #08C;
+        color: white;
+    }
