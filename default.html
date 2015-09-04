@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+<body class="default-body">
+  <div class="default-background"></div>
+
+  <div id="default-header">
+    <div class="header-left">
+     <img src="eye.png" style="margin-left: 30px;"> 
+         <h3><a href="file:///C:/Users/pc/Documents/GitHub/pixii/kanban.html">Gozde</a>Flow</h3>
+         <select name="board" style="float:right; height:26px;
+         margin-top:2px;">
+        <option value="My first board" selected="selected">Select board</option>
+    </select>
+     </div>
+     <div class="header-right">
+       <i class="fa fa-cog"></i>
+       <span class="administration"><a href="administration.html" style="color:white;">Administration</a></span>
+       <i class="fa fa-user"></i>
+       <span class="open-close"><a>User Name</a><i class="fa fa-caret-down"></i></span>
+  </div>
+    <div id="default-content">
+      <div class="default-content-inner">
+        <a href="administration.html">Administration</a>&nbsp<i class="fa fa-angle-double-right"></i>
+        <h2>Set Default Board</h2>
+        <div class="defaultSet">
+          <p>The default board is the board that will be shown when logging in.<br>
+          <b>Note:</b> If you use a direct bookmark to a board, that has higher priority than the default.
+          </p>
+        </div>
+        <p style="margin-left: 20px; margin-top: 15px; font-size: 14px;">Board:</p><br>
+        <select name="defaultBoard">
+          <option value="myFirstBoard" selected="selected">My first Board</option>
+        </select><br>
+        <button class="save">Save</button>
+        <button class="cancel">Cancel</button>
+      </div>
+    </div>
+</body>
+</html>

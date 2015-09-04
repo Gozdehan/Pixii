@@ -12,19 +12,34 @@
 	* html .clearfix { height: 1%; }
 	.clearfix { display: block; }
 	/* close commented backslash hack */
-   h3{
+
+h3{
     float: left;
     margin-top: 8px;
-    color:#E8810F;;
-   }
-  img{
+    color:#E8810F;
+}
+img{
     float: left;
     height: 30px;
     width: 40px;
     color: white;,
-   }
+}
+.default-body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
 
-#adm-header{
+.default-background{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #FFF;
+    z-index: -1;
+}
+#default-header{
   position: absolute;
   top:0;
   height: 30px;
@@ -76,14 +91,14 @@
     text-decoration: underline;
     cursor: hand;
 }
-#adm-content{
+#default-content{
 	position: relative;
 	top: 30px;
 	height: 613px;
 	width: 100%;
 	background-color: #d3e8f2;
 }
-.adm-content-inner{
+.default-content-inner{
   position: absolute;
   top: 0;
   bottom: 30px;
@@ -94,35 +109,72 @@
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
-.adm-content-inner h2, .adm-content-inner h3{
+.default-content-inner h2{
       color: rgba(0, 0, 0, 0.79);
       margin-left: 20px;
-      margin-top: 30px;
+      margin-top: 6px;
 }
-.adm-content-inner button{
-  padding: 6px;
-  border: 1px solid lightgray;
-  border-radius: 3px;
-  margin-left: 22px;
-  margin-top: 10px;
-  background: rgba(128, 128, 128, 0.16);
-}
-.adm-content-inner button:hover{
-  cursor: hand;
-  opacity: 0.9;
-}
-.box{
-  padding: 10px;
-  background: #d3e8f2;
-  border-radius: 3px;
-  margin-right: 20px;
+.default-content-inner a{
   margin-left: 20px;
-  border-color: #bce8f1;
-}
-.box a{
-  color:#3a87ad;
+  display: inline-block;
+  margin-top: 17px;
+  color: #08c;
   font-size: 14px;
 }
-button a{
-  color: black;
+.default-content-inner a:hover{
+  text-decoration: underline;
+  color:#000019;;
 }
+.defaultSet{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 900px;
+  background-color: #d9edf7;
+  color: #3a87ad;
+  border: 1px solid #bce8f1;
+  border-radius:7px;
+}
+.defaultSet p{
+  margin-left: 20px;
+  display: inline-block;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  font-size: 13px;
+}
+
+.default-content-inner select{
+	width: 220px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px;
+    margin-left: 20px;
+    margin-top: -8px;
+    border-radius: 3px;
+}
+.save{
+	margin-left: 20px;
+    margin-top: 6px;
+    padding: 5px 10px 5px 10px;
+    background-color: #04c;
+    border: 1px solid blue;
+    color: white;
+    border-radius: 3px;
+}
+.cancel{
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 5px 8px 5px 8px;
+    background-color: #f6f6f6;
+    border: 1px solid #bfbfbf;
+}
+.save:hover{
+	cursor: hand;
+	background: #006fcc;
+}
+.cancel:hover{
+	cursor: hand;
+	background: #e6e6e6;
+}
+
+
+

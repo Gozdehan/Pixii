@@ -73,12 +73,12 @@
     margin-left: 5px;
     font-size: 20px;
 }
-.administration a, .userFullName a{
+.administration a, .open-close a{
     font-size: 16px;
     text-decoration: none;
     color: white;
 }
-.administration:hover, .userFullName:hover a{
+.administration:hover, .open-close:hover a{
     text-decoration: underline;
     cursor: hand;
 }
