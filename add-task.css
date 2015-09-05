@@ -93,14 +93,22 @@ a{
 label{
 	font-weight: bold;
 }
-.general-box button{
+.dates-box .saveMore, .dates-box .saveClose, .dates-box .cancel{
 	font-weight: bold;
-	margin-top: 10px;
+	position: absolute;
+	bottom: 20px;
 }
-button{
+.subtasks-box .saveMore,.subtasks-box .cancel ,.subtasks-box .saveClose{
 	font-weight: bold;
-	margin-top: 280px;
+	position: absolute;
+	bottom: 20px;
 }
+ .general-box .saveClose, .general-box .saveMore, .general-box .cancel{
+ 	font-weight: bold;
+	position: absolute;
+	bottom: 20px;
+ }
+
 button:hover{
 	opacity: 0.9;
 	cursor: hand;
@@ -176,12 +184,13 @@ legend{
 	border: 1px solid lightgray; 
 	border-radius: 6px; 
 	padding: 7px; 
-	margin-left: 8px;
+	margin-left: 114px;
 }
 .cancel{
 	background: white; 
 	padding: 7px; 
 	border: 1px solid lightgray; 
 	border-radius: 6px; 
-	margin-left: 140px;
+	position: absolute;
+	right: 18px;
 }

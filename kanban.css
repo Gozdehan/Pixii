@@ -1,4 +1,6 @@
 *{margin: 0; padding: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
+
+
 .clearfix:after {
 	     visibility: hidden;
 	     display: block;
@@ -110,6 +112,7 @@ img{
     table-layout: fixed;
     border-collapse: collapse;
 }
+
 #board-table th{
     border: 1px solid grey; 
 }
@@ -117,6 +120,7 @@ img{
 #board-table a, .header-left a{
     text-decoration: none;
 }
+
 thead th{
     line-height: 40px;
 }
@@ -194,3 +198,12 @@ thead th{
         background: #08C;
         color: white;
     }
+    .reports:hover, .timer:hover, .settings:hover, .premium:hover{
+      background-color: rgb(98, 64, 140);
+  }
+  .help:hover{
+    opacity: 0.8;
+  }
+    
+
+
