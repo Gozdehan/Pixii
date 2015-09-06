@@ -143,7 +143,7 @@ thead th{
     color: white;
     height: inherit;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
 }
 #toolbar-table th{
     border-right: 1px solid grey;
@@ -204,6 +204,56 @@ thead th{
   .help:hover{
     opacity: 0.8;
   }
-    
-
-
+ .popoverMenu{
+    position: absolute;
+    bottom: 39px;
+    left: 155px;
+    z-index: 8;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 182px;
+    height: 97px;
+    display: none;
+ }
+ .popoverMenu-title, .popoverReports-title{
+    color:black;
+    padding-left: 8px;
+    padding-top: 6px;
+    height: 25px;
+    border-bottom: 1px solid #ccc;
+    background: #f4f4f4;
+ }
+.fa-asterisk,.fa-volume-up, .fa-bar-chart, .fa-print{
+    margin-left: 10px;
+    font-size: 17px;
+    margin-top: 9px;
+}
+.popoverSound a, .popoverColor a, .statistic a, .print a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 14px;
+}
+/*.body-board .fa-caret-down{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 233px;
+    font-size: 30px;
+    display: none;
+}*/
+.popoverReports{
+    position: absolute;
+    bottom: 39px;
+    left: 65px;
+    z-index: 8;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 170px;
+    height: 96px;
+    display: none;
+}
+.statistic:hover, .print:hover{
+    cursor: hand;
+}

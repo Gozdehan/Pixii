@@ -39,7 +39,7 @@
 }
 .header-left select{
    font-weight: bold;
-   font-size: 16px;
+   font-size: 15px;
    background-color: rgba(255, 255, 255, 0.91);
 }
 .header-left h3 a{
@@ -68,7 +68,7 @@
     font-size: 20px;
 }
 .administration a, .open-close a{
-    font-size: 16px;
+    font-size: 15px;
     text-decoration: none;
     color: white;
 }

@@ -145,20 +145,40 @@ $(".buyut-kucult").click(function(){
    $(document).ready(function(){
      var index = null;
      
-
-
     $(".fa-plus").click(function(){
        index = $(this).closest("th").index()
        console.log(index)
    });
 
-
      $(".saveClose").click(function(){
-      
         $("#board-table tbody th:nth-child(1)").append("deneme1");
         return false;     
+     });  
+   });
 
-     });
-     
+   $(".settings").click(function(){
+     if("none" == $(".popoverMenu").css("display")){
+       $(".popoverMenu").css({
+        display:"block"
+       });
+     }
+     else if("block" == $(".popoverMenu").css("display")){
+       $(".popoverMenu").css({
+         display: "none"
+       });
+     }
+   });
+
+  $(".reports").click(function(){
+     if("none" == $(".popoverReports").css("display")){
+       $(".popoverReports").css({
+        display:"block"
+       });
+     }
+     else if("block" == $(".popoverReports").css("display")){
+       $(".popoverReports").css({
+         display: "none"
+       });
+     }
    });
 
