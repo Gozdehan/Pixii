@@ -149,19 +149,40 @@
        </table>
    </div>
   </div>
-  <div class="popoverDown">
+
+ <!-- <div class="popoverDown"> -->
     <div class="popoverMenu">
        <h4 class="popoverMenu-title">Miscellaneous</h4>
-       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a></span><br>
-       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a></span>
+       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a><span class="soundOff-on">
+         <div class="off" style="background:#ccc">OFF</div>
+         <div class="on" style="background: #89E289;">ON</div>
+       </span></span><br>
+       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a><span class="colorOff-on">
+          <div class="off" style="background:#ccc">OFF</div>
+         <div class="on" style="background: #89E289;">ON</div>
+       </span></span>
     </div><br>
-   <!-- <i class="fa fa-caret-down"></i>--></div>
+   <!-- <i class="fa fa-caret-down"></i>  </div> -->
 
    <div class="popoverReports">
      <h4 class="popoverReports-title">Reports</h4>
      <span class="statistic"><i class="fa fa-bar-chart"></i><a>Pomodoro statistics</a></span><br><hr style="margin-top:7px;">
      <span class="print"><i class="fa fa-print"></i><a>Print</a></span>
    </div>
+   
+   <table class="hiddenColorMenu">
+     <tr>
+        <td class="yellow" style="background:rgba(255, 255, 0, 0.30);">Yellow</td>
+        <td class="green" style="background:rgba(0, 128, 0, 0.30);">Green</td>
+        <td class="blue" style="background:rgba(0, 0, 255, 0.30);">Blue</td>
+        <td class="red" style="background:rgba(255, 0, 0, 0.30);">Red</td>
+        <td class="orange" style="background:rgba(255, 165, 0, 0.30);">Orange</td>
+        <td class="purple" style="background:rgba(128, 0, 128, 0.30);">Purple</td>
+        <td class="magenta" style="background:rgba(255, 0, 255, 0.30);">Magenta</td>
+        <td class="cyan" style="background:rgba(0, 255, 255, 0.30);">Cyan</td>
+     </tr>
+   </table>
+
   <div id="board-footer">
     <div id="toolbar">
           <table id="toolbar-table">
@@ -176,6 +197,6 @@
        </table>
     </div>
   </div>
-    <script src="kanban.js"></script>
+    <script src="kanban.js"></script> 
 </body>
 </html>

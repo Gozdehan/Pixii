@@ -156,6 +156,7 @@ $(".buyut-kucult").click(function(){
      });  
    });
 
+
    $(".settings").click(function(){
      if("none" == $(".popoverMenu").css("display")){
        $(".popoverMenu").css({
@@ -167,6 +168,12 @@ $(".buyut-kucult").click(function(){
          display: "none"
        });
      }
+    
+    /* else if("block" == $(".reports").css("display")){
+        $(".reports").css({
+            display: "none"
+        });
+     } */
    });
 
   $(".reports").click(function(){
