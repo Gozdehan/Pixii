@@ -104,22 +104,6 @@ $(".buyut-kucult").click(function(){
 
    });
 
-  /* $(".saveClose").click(function(){
-     alert("veri okunup kapatılacak");
-   });
-
-   $(".saveMore").click(function(){
-     alert("xxx");
-   }); */
-
-
-/*$("#board-table thead th").click(function(){
-    $(this).css({
-      width:"20px",
-    });
-    $(this).removeClass("fa-plus");
-});*/
-
  var menuDurumAcik = false;
     function menuKapat () {
       if (true == menuDurumAcik) {
@@ -207,3 +191,50 @@ $(".buyut-kucult").click(function(){
      }
    });
 
+
+ $(".colorOn-off").click(function(){
+   $(".colorOn-off").css({
+     background: "rgba(99, 220, 99, 0.79)",
+     border: "1px solid rgba(99, 220, 99, 0.79)",
+   });
+   $(".hiddenColorMenu").css({
+     display: "block"
+   });
+   $("#board-table").css({
+    height: "550px"
+   });
+ });
+
+
+   var selectMenuAcik = false;
+      function selectKapat() {
+        if(true == selectMenuAcik){
+          $(".selectBoardMenu").css({
+            display: "none"
+          });
+          selectMenuAcik = false;
+        }
+      }
+
+ $(".selectBoard").click(function(){
+   if("none" == $(".selectBoardMenu").css("display")){
+    $(".selectBoardMenu").css({
+      display: "block"
+    });
+
+     setTimeout(function(){
+    selectMenuAcik = true;
+   },10);
+
+  }
+
+  else if("block" == $(".selectBoardMenu").css("display")){
+    selectKapat();
+  }
+});
+
+$("body").click(selectKapat);
+
+
+
+      
