@@ -120,19 +120,35 @@ $(".buyut-kucult").click(function(){
     $(this).removeClass("fa-plus");
 });*/
 
-
-	 $(".open-close").click(function(){
-      if("none" == $(".submenu").css("display")){
-        $(".submenu").css({
-          display:"block"
-        });
-     } 
-     else if("block" == $(".submenu").css("display")){
+ var menuDurumAcik = false;
+    function menuKapat () {
+      if (true == menuDurumAcik) {
         $(".submenu").css({
           display:"none"
         });
+
+        menuDurumAcik = false;
+      }
+        
+    }
+
+	 $(".open-close").click(function(){
+      if("none" == $(".submenu").css("display")){        
+        $(".submenu").css({
+          display:"block"
+        });
+
+        setTimeout(function () {
+          menuDurumAcik = true;
+        }, 10);  
+
+     } 
+     else if("block" == $(".submenu").css("display")){
+        menuKapat();
       }
    });
+
+  $("body").click(menuKapat);
 
   /*$(".body-board").click(function(){
     if("block" == $(".submenu").css("display")){
@@ -146,12 +162,14 @@ $(".buyut-kucult").click(function(){
      var index = null;
      
     $(".fa-plus").click(function(){
-       index = $(this).closest("th").index()
+       index = $(this).closest("th").index();
+
        console.log(index)
    });
 
      $(".saveClose").click(function(){
-        $("#board-table tbody th:nth-child(1)").append("deneme1");
+      console.log("#board-table tbody th:nth-child(" + (index + 1) + ")");
+        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("deneme1");
         return false;     
      });  
    });

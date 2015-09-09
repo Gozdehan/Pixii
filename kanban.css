@@ -54,10 +54,48 @@ img{
     height: 30px;
     width: 350px;
 }
-.header-left select{
-   font-weight: bold;
-   font-size: 16px;
-   background-color: rgba(255, 255, 255, 0.91);
+.selectBoard{
+    float: right;
+    height: 25px;
+    margin-top: 2px;
+    border: 1px solid;
+    width: 140px;
+    color: #000;
+    background: #eee;
+}
+.selectBoard h4{
+    padding-left: 5px;
+    padding-top: 4px;
+    float: left;
+    font-size: 15px;
+}
+.selectBoard .fa-caret-down{
+    color: rgba(51, 51, 51, 0.51);
+    font-size: 17px;
+    margin-left: 12px;
+    margin-top: 3px;
+}
+.selectBoard:hover{
+    cursor: hand;
+    background: white;
+}
+.selectBoardMenu{
+    position: absolute;
+    top: 30px;
+    left: 208px;
+    width: 160px;
+    height: 90px;
+    z-index: 10;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    background: white;
+}
+.selectBoardMenu li{
+    color: #222;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 8px;
 }
 .header-left h3 a{
     color:white;
@@ -265,6 +303,7 @@ thead th{
     height: 21px;
     border: 1px solid lightgray;
     border-bottom: none;
+    border-top: none;
     text-align: center;
     z-index: 7;
     table-layout: fixed;
