@@ -159,7 +159,7 @@ $(".buyut-kucult").click(function(){
    });
 
 
-   $(".settings").click(function(){
+  /* $(".settings").click(function(){
      if("none" == $(".popoverMenu").css("display")){
        $(".popoverMenu").css({
         display:"block"
@@ -169,16 +169,60 @@ $(".buyut-kucult").click(function(){
        $(".popoverMenu").css({
          display: "none"
        });
-     }
-    
-    /* else if("block" == $(".reports").css("display")){
-        $(".reports").css({
-            display: "none"
-        });
      } */
-   });
 
-  $(".reports").click(function(){
+     var settingsAcik = false;
+       function settingsKapat(){
+         if(true == settingsAcik){
+           $(".popoverMenu").css({
+             display: "none"
+           });
+           settingsAcik = false;
+         }
+       }
+   $(".settings:not(.soundOn-off)").click(function(){
+     if("none" == $(".popoverMenu").css("display")){
+       $(".popoverMenu").css({
+        display:"block"
+       });
+   setTimeout(function(){
+    settingsAcik = true;
+   },10);
+  }
+
+   else if("block" == $(".popoverMenu").css("display")){
+      settingsKapat();
+   }
+   });
+   $("body").click(settingsKapat);
+
+
+   var reportsAcik = false;
+       function reportsKapat(){
+         if(true == reportsAcik){
+           $(".popoverReports").css({
+             display: "none"
+           });
+           reportsAcik = false;
+         }
+       }
+   $(".reports").click(function(){
+     if("none" == $(".popoverReports").css("display")){
+       $(".popoverReports").css({
+        display:"block"
+       });
+   setTimeout(function(){
+    reportsAcik = true;
+   },10);
+  }
+
+   else if("block" == $(".popoverReports").css("display")){
+     reportsKapat();
+   }
+   });
+   $("body").click(reportsKapat);
+
+  /*$(".reports").click(function(){
      if("none" == $(".popoverReports").css("display")){
        $(".popoverReports").css({
         display:"block"
@@ -189,22 +233,46 @@ $(".buyut-kucult").click(function(){
          display: "none"
        });
      }
-   });
+   });  */
 
-
- $(".colorOn-off").click(function(){
-   $(".colorOn-off").css({
-     background: "rgba(99, 220, 99, 0.79)",
-     border: "1px solid rgba(99, 220, 99, 0.79)",
-   });
+  
+  function makeOn(){
    $(".hiddenColorMenu").css({
      display: "block"
    });
    $("#board-table").css({
     height: "550px"
    });
- });
+  $(".colorOn-off").removeClass("off").addClass("on");
+ }
 
+ function makeOff(){
+   $(".hiddenColorMenu").css({
+     display: "none"
+   });
+   $("#board-table").css({
+    height: "560px"
+   });
+  $(".colorOn-off").removeClass("on").addClass("off");
+ }
+  
+$(".colorOn-off").click(function(){
+  if(true == $(this).hasClass("off")){
+    makeOn();
+  }else{
+    makeOff();
+  }
+  return false;
+}); 
+
+$(".soundOn-off").click(function(){
+  if(true == $(this).hasClass("off")){
+    $(".soundOn-off").removeClass("off").addClass("on");
+  }else{
+    $(".soundOn-off").removeClass("on").addClass("off");
+  }
+
+});
 
    var selectMenuAcik = false;
       function selectKapat() {

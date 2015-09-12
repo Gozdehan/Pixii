@@ -340,29 +340,40 @@ thead th{
 .soundOn-off{
     position: absolute;
     right: 15px;
-    height: 20px;
+    height: 18px;
     width: 35px;
-    top: 38px;
+    top: 40px;
     border: 1px solid #ccc;
     background-color: #ccc; 
 }
-.soundOn-off a{
+  .colorOn-off a, .soundOn-off a{
     color: white;
-    margin-left: 5px;
+    margin-left: 0px;
     font-size: 15px;
 }
 .colorOn-off{
     position: absolute;
     right: 15px;
-    height: 20px;
+    height: 18px;
     width: 35px;
     border: 1px solid #ccc;
     text-align: center;
     background-color: #ccc;
-    color: white;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
+.on{
+    background-color: rgba(99,220,99,0.79);
+    border: 1px solid rgba(99,220,99,0.79);
+    color: white;
+}
+ 
+.off{
+    background-color: #ccc;
+    border: 1px solid #ccc;
+    color: white;
+}
+  
 
 
 
