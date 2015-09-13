@@ -304,5 +304,21 @@ $(".soundOn-off").click(function(){
 $("body").click(selectKapat);
 
 
+$(".timer").click(function(){
+   if("none" == $("#timerDialog").css("display")){
+       $("#timerDialog").css({
+        display: "block"
+       });
+   }
+   else if("block" == $("#timerDialog").css("display")){
+      $("#timerDialog").css({
+        display: "none"
+       });
+   }
+});
 
-      
+ $(".dialog-header .fa-times").click(function(){
+     $("#timerDialog").css({
+        display: "none"
+       });
+ })

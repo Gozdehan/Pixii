@@ -383,6 +383,7 @@ thead th{
     padding: 10px;
     border: 1px solid #333;
     border-radius: 0;
+    display: none;
 }
 .dialog-header{
     position: absolute;
@@ -438,4 +439,28 @@ thead th{
 .pomodoro:hover, .addTime:hover, .log:hover, .timerSettings:hover{
     cursor: hand;
     background-color: #1e1e1e;
+}
+.clockText{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 13px;
+}
+.clockLabel{
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 11px;
+}
+.timerStart{
+    float: right;
+    margin-right: 13px;
+    margin-top: -45px;
+    height: 42px;
+    width: 96px;
+    background-color: #449d44;
+    color: #fff;
+    border: 1px solid #3f923f;
+    font-size: 17px;
+    font-weight: bold;
 }
