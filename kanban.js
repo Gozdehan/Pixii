@@ -180,7 +180,7 @@ $(".buyut-kucult").click(function(){
            settingsAcik = false;
          }
        }
-   $(".settings:not(.soundOn-off)").click(function(){
+   $(".settings").click(function(){
      if("none" == $(".popoverMenu").css("display")){
        $(".popoverMenu").css({
         display:"block"
@@ -194,7 +194,7 @@ $(".buyut-kucult").click(function(){
       settingsKapat();
    }
    });
-   $("body").click(settingsKapat);
+   $("body").not(".soundOn-off").click(settingsKapat);
 
 
    var reportsAcik = false;

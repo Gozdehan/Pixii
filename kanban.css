@@ -423,6 +423,19 @@ thead th{
     border-bottom: 1px solid #1e1e1e;
     border-top: 1px solid #1e1e1e;
 }
-
-
-
+.dialog-footer .fa{
+    font-size: 20px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+}
+.pomodoro, .addTime, .log, .timerSettings{
+    color: white;
+    font-size: 10px;
+    display: inline-block;
+    padding: 7px 12px 5px 10px;
+    background-color: #333;
+}
+.pomodoro:hover, .addTime:hover, .log:hover, .timerSettings:hover{
+    cursor: hand;
+    background-color: #1e1e1e;
+}
