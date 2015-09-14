@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="kanban.css">
 <link rel="stylesheet" type="text/css" href="add-task.css">
 <link rel="stylesheet" type="text/css" href="administration.css">
+<link rel="stylesheet" type="text/css" href="timer.css">
 </head>
 
 <body class="body-board">
@@ -155,17 +156,51 @@
        <button class="timerStart">Start</button>
     </div>
     <div class="dialog-footer">
-      <label class="pomodoro"><i class="fa fa-rebel"></i><br>Pomodoro</label>
+      <label class="stopwatch"><i class="fa fa-clock-o"></i><br>Stopwatch</label>
       <label class="addTime"><i class="fa fa-pencil-square-o"></i><br>Add time</label>
       <label class="log"><i class="fa fa-database" style="margin-left:3px"></i><br>Log</label>
       <label class="timerSettings"><i class="fa fa-cogs"></i><br>Settings</label>
     </div>
    </div>
+    
+     <div id="stopwatchTimerDialog">
+    <div class="dialog-header"><h2>Stopwatch timer</h2><i style="float:right;" class="fa fa-times"></i></div>
+    <div class="dialog-content">
+       <div class="clockLabel">Session time</div>
+       <div class="clockText">00:00</div>
+       <button class="timerStart">Start</button>
+    </div>
+    <div class="dialog-footer">
+      <label class="pomodoro"><i class="fa fa-rebel"></i><br>pomodoro</label>
+      <label class="addTime"><i class="fa fa-pencil-square-o"></i><br>Add time</label>
+      <label class="log"><i class="fa fa-database" style="margin-left:3px"></i><br>Log</label>
+      <label class="timerSettings"><i class="fa fa-cogs"></i><br>Settings</label>
+    </div>
+   </div>
+   <div id="addTimeDialog">
+     <div class="dialog-header"><h2>Add time manually</h2><i style="float:right;" class="fa fa-times"></i></div>
+     <div class="addTimeDialogContent">
+      <div class="addTimeContent">
+         <div class="addTimeSelect"></div>
+         <label style="margin-left:69px;">Date:</label>
+         <input type="text"><br>
+         <label style="margin-left:65px;">From:</label>
+         <input type="text"><br>
+         <label style="margin-left:81px;">To:</label>
+         <input type="text"><br>
+         <label>Duration:</label>
+         <input type="text"><br>
+     </div>
+     <button class="addTimeDialog-cancel">Cancel</button>
+     <button class="addTimeDialog-add">Add</button>
+     </div>
+     
+   </div>
  <!-- <div class="popoverDown"> -->
     <div class="popoverMenu">
        <h4 class="popoverMenu-title">Miscellaneous</h4>
-       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a><span class="soundOn-off"></span></span><br>
-       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a><span class="colorOn-off"><a>OFF</a><a style="display:none;">ON</a></span></span>
+       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a><span class="soundOn-off"><a style="margin-left:4px;">OFF</a></span></span><br>
+       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a><span class="colorOn-off"><a style="margin-left:0px;">OFF</a><a style="display:none;">ON</a></span></span>
     </div><br>
    <!-- <i class="fa fa-caret-down"></i>  </div> -->
 

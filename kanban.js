@@ -153,7 +153,7 @@ $(".buyut-kucult").click(function(){
 
      $(".saveClose").click(function(){
       console.log("#board-table tbody th:nth-child(" + (index + 1) + ")");
-        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("deneme1");
+        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("deneme");
         return false;     
      });  
    });
@@ -321,4 +321,41 @@ $(".timer").click(function(){
      $("#timerDialog").css({
         display: "none"
        });
- })
+     $("#stopwatchTimerDialog").css({
+       display: "none"
+     });
+     $("#addTimeDialog").css({
+      display: "none"
+     });
+ });
+
+ $(".stopwatch").click(function(){
+    $("#timerDialog").css({
+      display: "none"
+    });
+    $("#stopwatchTimerDialog").css({
+      display: "block"
+    });
+ });
+
+ $(".pomodoro").click(function(){
+   $("#stopwatchTimerDialog").css({
+      display: "none"
+    });
+   $("#timerDialog").css({
+      display: "block"
+    });
+ });
+
+$(".addTime").click(function(){
+    $("#stopwatchTimerDialog").css({
+      display: "none"
+    });
+    $("#timerDialog").css({
+      display: "none"
+    });
+    $("#addTimeDialog").css({
+      display: "block"
+    });
+});
+
