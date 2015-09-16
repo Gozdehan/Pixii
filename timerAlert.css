@@ -1,0 +1,103 @@
+*{margin: 0; padding: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
+.clearfix:after {
+       visibility: hidden;
+       display: block;
+       font-size: 0;
+       content: " ";
+       clear: both;
+       height: 0;
+       }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
+.timeralert-box-background{
+  background: rgba(0, 0, 0, 0.42);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: none;
+  z-index: 999999;
+} 
+ 
+.timeralert-box{
+  position: absolute;
+  top:50%;
+  left:50%;
+  margin-left:-104px; 
+  margin-top:-75px;
+  width: 308px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: rgba(238, 238, 238, 0.49);
+  z-index: 1;
+  display: none;
+}
+.timeralert-box-header{
+  position: absolute;
+  margin: 3px 3px;
+  height: 35px;
+  width: 97%;
+  border:1px solid orange;
+  border-radius: 4px;
+  background: rgba(255, 165, 0, 0.62);
+}
+
+.timeralert-box-header h4{
+    color: white;
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 14px;
+  }
+.timeralert-box-header .fa-times{
+    float: right;
+    margin-top: -19px;
+    margin-right: 12px;
+    border: 1px solid white;
+    background: white;
+    padding: 2px 4px 2px 4px;
+    font-size: 15px;
+    border-radius: 4px;
+    color:rgb(255, 165, 0);
+}
+  .timeralert-box-content{
+    position: absolute;
+    top:38px;
+    width: 100%;
+  }
+  .timeralert-box-content{
+    position: absolute;
+    top:38px;
+    width: 100%;
+  }
+  
+  .timeralert-box-content p{
+    font-size: 13px;
+    margin-left: 16px;
+    margin-top: 12px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  hr{
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    margin-left: 4px;
+    margin-right: 4px;
+  }
+  .timeralert-box-content button{
+    float: right;
+    border: 1px solid rgba(128, 128, 128, 0.21);
+    border-radius: 4px;
+    padding: 7px 14px 7px 14px;
+    margin-right: 22px;
+    margin-top: 7px;
+    color: #1c94c4;
+    font-weight: bold;
+    background: white;
+  }
+  .timeralert-box-content button:hover, .timeralert-box-header .timerfa-times:hover{
+    color:#c77405;
+    border: 1px solid #fbcb09;
+    background: #fdf5ce;
+    cursor: hand;
+  }

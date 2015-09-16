@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="add-task.css">
 <link rel="stylesheet" type="text/css" href="administration.css">
 <link rel="stylesheet" type="text/css" href="timer.css">
+<link rel="stylesheet" type="text/css" href="timerAlert.css">
 </head>
 
 <body class="body-board">
@@ -19,6 +20,16 @@
        <hr>
        <li><a href="#">Log out</a></li>
     </ul>
+
+  <div class="timeralert-box-background">
+    <div class="timeralert-box">
+      <div class="timeralert-box-header"><h4>Alert</h4><i class="fa fa-times" data-name="exit"></i></div>
+      <div class="timeralert-box-content">
+      <p>You can not close the dialog at this stage.Please click either "Cancel" or "Add" first.</p><br><hr>
+      <button data-name="ok">OK</button>
+    </div> 
+    </div>
+   </div> 
 
   <div class="task-page-background">	
   <div class="task-page">
@@ -55,7 +66,7 @@
             <option class="cyan" value="Cyan" style="background:rgba(0, 255, 255, 0.30);">Cyan</option>
           </select>
           <label style="display:block; margin-left:242px; margin-top:-43px; font-size:14px;">Responsible</label><br>
-             <select name="responsible" style="display:block; margin-left:242px; margin-top:-18px; padding:2px; width:210px; border:1px solid lightgray;">
+             <select name="responsible" style="display:block; margin-left:242px; margin-top:-17px; padding:2px; width:210px; border:1px solid lightgray;">
               <option value="(none)" selected="selected">(none)</option>
              </select><br>
           <label style="margin-left:15px; font-size:14px;">Time spent</label><br>
@@ -154,6 +165,7 @@
        <div class="clockLabel">Time until break</div>
        <div class="clockText">25:00</div>
        <button class="timerStart">Start</button>
+       <div class="pomodoroSelect"><p>No task selected</p><button class="p-taskButton-select">Select</button></div>
     </div>
     <div class="dialog-footer">
       <label class="stopwatch"><i class="fa fa-clock-o"></i><br>Stopwatch</label>
@@ -169,6 +181,7 @@
        <div class="clockLabel">Session time</div>
        <div class="clockText">00:00</div>
        <button class="timerStart">Start</button>
+       <div class="stopwatchSelect"><p>No task selected</p><button class="s-taskButton-select">Select</button></div>
     </div>
     <div class="dialog-footer">
       <label class="pomodoro"><i class="fa fa-rebel"></i><br>pomodoro</label>
@@ -207,7 +220,7 @@
    <div class="popoverReports">
      <h4 class="popoverReports-title">Reports</h4>
      <span class="statistic"><i class="fa fa-bar-chart"></i><a>Pomodoro statistics</a></span><br><hr style="margin-top:7px;">
-     <span class="print"><i class="fa fa-print"></i><a>Print</a></span>
+     <div class="print"><i class="fa fa-print"></i><a>Print</a></div>
    </div>
    
    <table class="hiddenColorMenu">

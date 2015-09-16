@@ -220,22 +220,10 @@ $(".buyut-kucult").click(function(){
      reportsKapat();
    }
    });
-   $("body").click(reportsKapat);
+  /* $("body").not(document.getElemetsByClass("print")).click(reportsKapat); */
+  /* $("body").not($(".popoverReports")).click(reportsKapat); */
+   $("body").not(".popoverReports").click(reportsKapat);
 
-  /*$(".reports").click(function(){
-     if("none" == $(".popoverReports").css("display")){
-       $(".popoverReports").css({
-        display:"block"
-       });
-     }
-     else if("block" == $(".popoverReports").css("display")){
-       $(".popoverReports").css({
-         display: "none"
-       });
-     }
-   });  */
-
-  
   function makeOn(){
    $(".hiddenColorMenu").css({
      display: "block"
@@ -305,7 +293,7 @@ $("body").click(selectKapat);
 
 
 $(".timer").click(function(){
-   if("none" == $("#timerDialog").css("display")){
+  if("none" == $("#timerDialog").css("display")){
        $("#timerDialog").css({
         display: "block"
        });
@@ -314,8 +302,20 @@ $(".timer").click(function(){
       $("#timerDialog").css({
         display: "none"
        });
-   }
+   }  
+   else if("block" == $("#addTimeDialog").css("display")){
+         $("#timerDialog").css({
+           display: "none"
+          });
+          $("#stopwatchTimerDialog").css({
+          display: "none"
+          });
+         $(".timeralert-box-background").css({
+           display: "block"
+       }); 
+   } 
 });
+
 
  $(".dialog-header .fa-times").click(function(){
      $("#timerDialog").css({
@@ -359,3 +359,33 @@ $(".addTime").click(function(){
     });
 });
 
+$("#addTimeDialog .fa-times").click(function(){
+    $("#addTimeDialog").css({
+      display: "block"
+    });
+
+   $(".timeralert-box-background").css({
+     display: "block"
+   });
+   $(".timeralert-box").css({
+     display: "block"
+   });
+});
+
+  $(".timeralert-box-content button").click(function(){
+    var ex = $(this).attr("data-name");
+    if(ex = "ok"){
+      $(".timeralert-box-background").css({
+        display: "none"
+      });
+    }
+  });
+
+ $(".timeralert-box-header .fa-times").click(function(){
+    var ex = $(this).attr("data-name");
+    if(ex = "exit"){
+      $(".timeralert-box-background").css({
+        display: "none"
+      });
+    }
+ });
