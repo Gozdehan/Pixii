@@ -389,3 +389,32 @@ $("#addTimeDialog .fa-times").click(function(){
       });
     }
  });
+
+
+$(".addTimeDialog-cancel").click(function(){
+ $("#addTimeDialog").css({
+    display: "none"
+  });
+  $("#timerDialog").css({
+    display: "block"
+  });
+});
+
+$("#timerDialog .timerStart").click(function(){
+  $(".pomodoroSelect").css({
+    display: "none"
+  });
+  $(".pomodoroCancel").css({
+    display: "block"
+  });
+});
+
+$("#stopwatchTimerDialog .timerStart").click(function(){
+  $(".stopwatchSelect").css({
+    display: "none"
+  });
+  $(".stopwatchCancel").css({
+    display: "block"
+  });
+});
+
