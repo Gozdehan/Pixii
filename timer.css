@@ -172,6 +172,12 @@
     margin-left: 10px;
     margin-top: 15px;
 }
+.addTimeSelect p{
+    font-size: 13;
+    font-weight: bold;
+    margin-left: 10px;
+    padding-top: 13px;
+}
     
 .p-taskButton-select, .s-taskButton-select, .p-taskButton-cancel, .s-taskButton-cancel{
     float: right;
@@ -183,4 +189,24 @@
     background-color: rgba(51, 51, 51, 0.82);
     color: white;
     font-weight: bold;
+}
+.addTime-taskButton-select{
+    float: right;
+    margin-right: 10px;
+    margin-top: -21px;
+    width: 70px;
+    height: 30;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: black;
+    font-weight: bold;
+}
+.workTimerDialog-info{
+    bottom: 17px;
+    font-size: 11px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    color: white;
 }

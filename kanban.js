@@ -204,7 +204,9 @@ $(".buyut-kucult").click(function(){
              display: "none"
            });
            reportsAcik = false;
+           return false;
          }
+         
        }
    $(".reports").click(function(){
      if("none" == $(".popoverReports").css("display")){
@@ -220,9 +222,15 @@ $(".buyut-kucult").click(function(){
      reportsKapat();
    }
    });
-  /* $("body").not(document.getElemetsByClass("print")).click(reportsKapat); */
-  /* $("body").not($(".popoverReports")).click(reportsKapat); */
-   $("body").not(".popoverReports").click(reportsKapat);
+   $("body").click(reportsKapat);
+
+   $(".popoverReports").click(function(){
+       return false;
+   });
+
+   $(".popoverMenu").click(function(){
+      return false;
+   });
 
   function makeOn(){
    $(".hiddenColorMenu").css({
@@ -232,6 +240,7 @@ $(".buyut-kucult").click(function(){
     height: "550px"
    });
   $(".colorOn-off").removeClass("off").addClass("on");
+  $(".colorOn-off a").html("ON");
  }
 
  function makeOff(){
@@ -242,6 +251,7 @@ $(".buyut-kucult").click(function(){
     height: "560px"
    });
   $(".colorOn-off").removeClass("on").addClass("off");
+  $(".colorOn-off a").html("OFF");
  }
   
 $(".colorOn-off").click(function(){
@@ -255,11 +265,15 @@ $(".colorOn-off").click(function(){
 
 $(".soundOn-off").click(function(){
   if(true == $(this).hasClass("off")){
+    console.log("ses acilacak");
     $(".soundOn-off").removeClass("off").addClass("on");
+    $(".soundOn-off a").html("ON");
   }else{
+    console.log("ses kapatılacak");
     $(".soundOn-off").removeClass("on").addClass("off");
+    $(".soundOn-off a").html("OFF");
   }
-
+ return false;
 });
 
    var selectMenuAcik = false;
@@ -293,7 +307,19 @@ $("body").click(selectKapat);
 
 
 $(".timer").click(function(){
-  if("none" == $("#timerDialog").css("display")){
+  if("block" == $("#addTimeDialog").css("display")){
+         $("#addTimeDialog").css({
+      display: "block"
+    });
+
+   $(".timeralert-box-background").css({
+     display: "block"
+   });
+   $(".timeralert-box").css({
+     display: "block"
+   });
+ 
+   } else if("none" == $("#timerDialog").css("display")){
        $("#timerDialog").css({
         display: "block"
        });
@@ -303,17 +329,7 @@ $(".timer").click(function(){
         display: "none"
        });
    }  
-   else if("block" == $("#addTimeDialog").css("display")){
-         $("#timerDialog").css({
-           display: "none"
-          });
-          $("#stopwatchTimerDialog").css({
-          display: "none"
-          });
-         $(".timeralert-box-background").css({
-           display: "block"
-       }); 
-   } 
+
 });
 
 
@@ -418,3 +434,44 @@ $("#stopwatchTimerDialog .timerStart").click(function(){
   });
 });
 
+$(".p-taskButton-select").click(function(){
+  if("block" == $(".pomodoroSelect").css("display")){
+    $(".pomodoroSelect").css({
+      display: "none"
+    });
+    $(".pomodoroCancel").css({
+      display: "block"
+    });
+  }
+});
+$(".p-taskButton-cancel").click(function(){
+   if("block" == $(".pomodoroCancel").css("display")){
+     $(".pomodoroCancel").css({
+       display: "none"
+     });
+     $(".pomodoroSelect").css({
+       display: "block"
+     });
+   }
+});
+
+$(".s-taskButton-select").click(function(){
+  if("block" == $(".stopwatchSelect").css("display")){
+    $(".stopwatchSelect").css({
+      display: "none"
+    });
+    $(".stopwatchCancel").css({
+      display: "block"
+    });
+  }
+});
+$(".s-taskButton-cancel").click(function(){
+   if("block" == $(".stopwatchCancel").css("display")){
+     $(".stopwatchCancel").css({
+       display: "none"
+     });
+     $(".stopwatchSelect").css({
+       display: "block"
+     });
+   }
+});

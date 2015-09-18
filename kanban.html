@@ -86,10 +86,10 @@
             <legend>Add due date</legend>
               <ul>
                 <li>Date<i class="fa fa-info-circle"></i><br>
-                 <input type="text" style="width:100px; padding:2px;" placeholder="yyyy-mm-dd"><i class="fa fa-calendar"></i>
+                 <input type="date" style="width:100px; padding:2px;">
                 </li>
                 <li>Time<i class="fa fa-info-circle"></i><br>
-                  <input type="text" style="width:68px; padding:2px;">
+                  <input type="time" style="width:68px; padding:2px;">
                 </li>
                 <li>Target column<i class="fa fa-info-circle"></i><br>
                    <select name="target" style="padding:2px;">
@@ -167,6 +167,7 @@
        <button class="timerStart">Start</button>
        <div class="pomodoroSelect"><p>No task selected</p><button class="p-taskButton-select">Select</button></div>
        <div class="pomodoroCancel"><p>Click a task on the<br> board to select it</p><button class="p-taskButton-cancel" style="margin-top:-32px;">Cancel</button></div>
+       <div class="workTimerDialog-info">TODAY | Pomodoros:0 FlowPoints:0</div>
     </div>
     <div class="dialog-footer">
       <label class="stopwatch"><i class="fa fa-clock-o"></i><br>Stopwatch</label>
@@ -183,7 +184,8 @@
        <div class="clockText">00:00</div>
        <button class="timerStart">Start</button>
        <div class="stopwatchSelect"><p>No task selected</p><button class="s-taskButton-select">Select</button></div>
-       <div class="stopwatchCancel"><p>Click a task on the<br> board to select it</p><button class="p-taskButton-cancel" style="margin-top:-32px;">Cancel</button></div>
+       <div class="stopwatchCancel"><p>Click a task on the<br> board to select it</p><button class="s-taskButton-cancel" style="margin-top:-32px;">Cancel</button></div>
+       <div class="workTimerDialog-info">TODAY | Pomodoros:0 FlowPoints:0</div>
     </div>
     <div class="dialog-footer">
       <label class="pomodoro"><i class="fa fa-rebel"></i><br>pomodoro</label>
@@ -196,7 +198,7 @@
      <div class="dialog-header"><h2>Add time manually</h2><i style="float:right;" class="fa fa-times"></i></div>
      <div class="addTimeDialogContent">
       <div class="addTimeContent">
-         <div class="addTimeSelect"></div>
+         <div class="addTimeSelect"><p>No task selected</p><button class="addTime-taskButton-select">Select</button></div>
          <label style="margin-left:69px;">Date:</label>
          <input type="text"><br>
          <label style="margin-left:65px;">From:</label>
@@ -214,8 +216,8 @@
  <!-- <div class="popoverDown"> -->
     <div class="popoverMenu">
        <h4 class="popoverMenu-title">Miscellaneous</h4>
-       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a><span class="soundOn-off"><a style="margin-left:4px;">OFF</a></span></span><br>
-       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a><span class="colorOn-off"><a style="margin-left:0px;">OFF</a><a style="display:none;">ON</a></span></span>
+       <span class="popoverSound"><i class="fa fa-volume-up"></i><a>Sound</a><span class="soundOn-off"><a style="margin-left:0px;"><div class="off"></div>OFF</a></span></span><br>
+       <span class="popoverColor"><i class="fa fa-asterisk"></i><a>Color legend</a><span class="colorOn-off"><a style="margin-left:0px;"><div class="off"></div>OFF</a><a style="display:none;">ON</a></span></span>
     </div><br>
    <!-- <i class="fa fa-caret-down"></i>  </div> -->
 
