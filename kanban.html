@@ -84,9 +84,9 @@
          <form>
           <fieldset>
             <legend>Add due date</legend>
-              <ul>
+              <ul style="margin-top:7px;">
                 <li>Date<i class="fa fa-info-circle"></i><br>
-                 <input type="date" style="width:100px; padding:2px;">
+                 <input type="date" style="width:122px; padding:2px;">
                 </li>
                 <li>Time<i class="fa fa-info-circle"></i><br>
                   <input type="time" style="width:68px; padding:2px;">
@@ -100,6 +100,8 @@
                 </li>
                 <li><button>Add</button></li>
               </ul>
+              <div class="clearfix"></div>
+              <input style="margin-top: 8px; margin-left: 12px;" type="checkbox"><b style="margin-left:5px; font-size:14px;">Repeat (e.g. every week)</b>
           </fieldset>
            <button class="saveClose">Save & close</button>
            <button class="saveMore">Save & add more</button>
@@ -199,6 +201,7 @@
      <div class="addTimeDialogContent">
       <div class="addTimeContent">
          <div class="addTimeSelect"><p>No task selected</p><button class="addTime-taskButton-select">Select</button></div>
+         <div class="addTimeCancel"><p>Click a task on the<br> board to select it</p><button class="addTime-taskButton-cancel">Cancel</button></div>
          <label style="margin-left:69px;">Date:</label>
          <input type="text"><br>
          <label style="margin-left:65px;">From:</label>

@@ -475,3 +475,23 @@ $(".s-taskButton-cancel").click(function(){
      });
    }
 });
+$(".addTime-taskButton-select").click(function(){
+   if("block" == $(".addTimeSelect").css("display")){
+     $(".addTimeSelect").css({
+       display: "none"
+     });
+     $(".addTimeCancel").css({
+      display:"block"
+     });
+   }
+});
+$(".addTime-taskButton-cancel").click(function(){
+  if("block" == $(".addTimeCancel").css("display")){
+    $(".addTimeCancel").css({
+      display:"none"
+     });
+    $(".addTimeSelect").css({
+       display: "block"
+     });
+  }
+});
