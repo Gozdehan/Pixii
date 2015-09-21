@@ -169,7 +169,13 @@
        <button class="timerStart">Start</button>
        <div class="pomodoroSelect"><p>No task selected</p><button class="p-taskButton-select">Select</button></div>
        <div class="pomodoroCancel"><p>Click a task on the<br> board to select it</p><button class="p-taskButton-cancel" style="margin-top:-32px;">Cancel</button></div>
-       <div class="workTimerDialog-info">TODAY | Pomodoros:0 FlowPoints:0</div>
+       <div class="workTimerDialog-info">
+         <ul>
+          <li>TODAY</li>
+          <li>Pomodoros: 0</li>
+          <li>Flow Points: 0</li>
+         </ul>
+       </div>
     </div>
     <div class="dialog-footer">
       <label class="stopwatch"><i class="fa fa-clock-o"></i><br>Stopwatch</label>
@@ -187,7 +193,13 @@
        <button class="timerStart">Start</button>
        <div class="stopwatchSelect"><p>No task selected</p><button class="s-taskButton-select">Select</button></div>
        <div class="stopwatchCancel"><p>Click a task on the<br> board to select it</p><button class="s-taskButton-cancel" style="margin-top:-32px;">Cancel</button></div>
-       <div class="workTimerDialog-info">TODAY | Pomodoros:0 FlowPoints:0</div>
+       <div class="workTimerDialog-info">
+        <ul>
+          <li>TODAY</li>
+          <li>Pomodoros: 0</li>
+          <li>Flow Points: 0</li>
+        </ul>
+       </div>
     </div>
     <div class="dialog-footer">
       <label class="pomodoro"><i class="fa fa-rebel"></i><br>pomodoro</label>
@@ -258,5 +270,6 @@
     </div>
   </div>
     <script src="kanban.js"></script> 
+    <script src="moment.js"></script>
 </body>
 </html>
