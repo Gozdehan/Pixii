@@ -495,3 +495,26 @@ $(".addTime-taskButton-cancel").click(function(){
      });
   }
 });
+
+
+$(".log").click(function(){
+  $(".log-page").css({
+    display: "block"
+  });
+});
+$(".log-header .fa-times").click(function(){
+   $(".log-page").css({
+    display: "none"
+   });
+});
+
+$(".timerSettings").click(function(){
+  $(".settings-page").css({
+    display: "block"
+  });
+});
+$(".settings-page-header .fa-times").click(function(){
+  $(".settings-page").css({
+    display: "none"
+  });
+});
