@@ -50,5 +50,35 @@
   color: white;
   margin-top:-19px;
 }
+.left-content{
+  float: left;
+  width: 48%;
+  height: 200px;
+  margin-top: 44px;
+  margin-left: 10px;
 }
-    
+.right-content{
+  float: right;
+  width: 48%;
+  height: 200px;
+  margin-top: 44px;
+  margin-right: 10px;
+}
+.left-content h2, .right-content h2{
+  color: #FFF;
+  font-size: 16px;
+  font-weight: bold;
+}
+.left-content-border, .right-content-border{
+  border: 1px solid #999;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  margin-top: 10px;
+}
+.left-border-select, .right-border-select{
+  padding: 2px;
+  margin-left: 4px;
+  margin-top: 6px;
+  width: 152px;
+}
