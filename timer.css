@@ -3,10 +3,10 @@
 #timerDialog, #stopwatchTimerDialog, #addTimeDialog{
     position: relative;
     left: 0;
-    bottom:-329px;
+    bottom:-330px;
     height: 262px;
     width: 228px;
-    z-index: 3;
+    z-index: 10;
     padding: 10px;
     border: 1px solid #333;
     border-radius: 0;
