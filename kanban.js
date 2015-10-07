@@ -153,7 +153,7 @@ $(".buyut-kucult").click(function(){
 
      $(".saveClose").click(function(){
       console.log("#board-table tbody th:nth-child(" + (index + 1) + ")");
-        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("<div class='asdasd'>deneme</div>");
+        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("<div class='deneme'>deneme</div>");
         return false;     
      });  
    });
@@ -407,14 +407,20 @@ $("#addTimeDialog .fa-times").click(function(){
  });
 
 
-$(".addTimeDialog-cancel").click(function(){
+  $(".addTimeDialog-cancel").click(function(){
  $("#addTimeDialog").css({
     display: "none"
   });
   $("#timerDialog").css({
     display: "block"
   });
-});
+}); 
+
+/*$(document).ready(function(){
+   $(".addTimeDialog-cancel").click(function(){
+     var current = ????
+   });
+}); */
 
 $("#timerDialog .timerStart").click(function(){
   $(".pomodoroSelect").css({

@@ -246,7 +246,7 @@ thead th{
     position: absolute;
     bottom: 39px;
     left: 155px;
-    z-index: 8;
+    z-index: 12;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -284,7 +284,7 @@ thead th{
     position: absolute;
     bottom: 39px;
     left: 65px;
-    z-index: 8;
+    z-index: 12;
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -317,26 +317,6 @@ thead th{
 .hiddenColorMenu td:last-child{
     border-right: none;
 }
-/*.soundOff-on{
-    position: absolute;
-    right: -35px;
-    height: 22px;
-    width: 70px;
-    top: 38px;
-}
-.colorOff-on{
-    position: absolute;
-    right: -35px;
-    height: 22px;
-    width: 70px;
-    bottom: 10px;
-}
-.on, .off{
-    float: left;
-    width: 50%;
-    text-align: center;
-    color: white;
-} */
 .soundOn-off{
     position: absolute;
     right: 15px;
@@ -373,3 +353,13 @@ thead th{
     color: white;
 }
 
+.deneme{
+    border: 1px solid pink;
+    border-radius: 5px;
+    height: 30px;
+    width: 320px;
+    background-color: rgba(253, 168, 232, 0.49);
+    margin-left: 5px;
+    margin-top: 2px;
+    padding-top: 10px;
+}
