@@ -153,7 +153,7 @@ $(".buyut-kucult").click(function(){
 
      $(".saveClose").click(function(){
       console.log("#board-table tbody th:nth-child(" + (index + 1) + ")");
-        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("deneme");
+        $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("<div class='asdasd'>deneme</div>");
         return false;     
      });  
    });
@@ -264,7 +264,7 @@ $(".colorOn-off").click(function(){
 }); 
 
 $(".soundOn-off").click(function(){
-  if(true == $(this).hasClass("off")){
+  if($(this).hasClass("off") == true){
     console.log("ses acilacak");
     $(".soundOn-off").removeClass("off").addClass("on");
     $(".soundOn-off a").html("ON");
@@ -516,5 +516,13 @@ $(".timerSettings").click(function(){
 $(".settings-page-header .fa-times").click(function(){
   $(".settings-page").css({
     display: "none"
+  });
+});
+
+$( document ).ready(function() {
+  var date = new Date().valueOf() + 25 * 1000 * 60;
+
+  $('.clockText').countdown(date, function(event) {
+      $(this).html(event.strftime('%M:%S'));
   });
 });
