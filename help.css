@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0; outline: 0; list-style:none; text-decoration:none; font-family: 'Roboto', sans-serif;}
+.clearfix:after {
+       visibility: hidden;
+       display: block;
+       font-size: 0;
+       content: " ";
+       clear: both;
+       height: 0;
+       }
+  .clearfix { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .clearfix { height: 1%; }
+  .clearfix { display: block; }
+  /* close commented backslash hack */
+
+  .help-page{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 416px;
+    width: 540px;
+    border: 1px solid #c3c4c4;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 1px rgba(0,0,0,0.25);
+    color: #2e2e2e;
+    background-color: #f5f5f5;
+    z-index: 3;
+    margin-left: -270px;
+    margin-top: -208px;
+    display: none;
+  }
+  .help-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .help-header h2{
+  color: white;
+  font-size: 14px;
+  font-family: arial;
+  margin-left: 15px;
+  margin-top: 7px;
+ }
+  .help-header .fa-times{
+  float: right;
+  color: white;
+  margin-top:-19px;
+ }
+  .help-content{
+    position: absolute;
+    margin-top: 30px;
+    width: 540px;
+    height: 386px;
+  }
+  .helpDialog-tabs{
+    margin-top: 24px;
+  }
+  .helpDialog-tabs li{
+    float: left;
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+  }
+  .helpDialog-tabs li:hover{
+    cursor: hand;
+  }

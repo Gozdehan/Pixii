@@ -513,6 +513,17 @@ $(".log-header .fa-times").click(function(){
     display: "none"
    });
 });
+ 
+ $(".help").click(function(){
+  $(".help-page").css({
+    display: "block"
+  });
+});
+$(".help-header .fa-times").click(function(){
+   $(".help-page").css({
+    display: "none"
+   });
+});
 
 $(".timerSettings").click(function(){
   $(".settings-page").css({

@@ -132,7 +132,7 @@
     cursor: hand;
     background-color: #1e1e1e;
 }
-.clockText{
+.clockText, .clock_Text{
     color: white;
     font-size: 42px;
     font-weight: bold;
