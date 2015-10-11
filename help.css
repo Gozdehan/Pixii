@@ -71,3 +71,26 @@
   .helpDialog-tabs li:hover{
     cursor: hand;
   }
+  .qH-content{
+    display: block;
+    margin-top: 55px;
+    height: 315px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #1b75bb;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  .qH-content li{
+    border-top: 1px solid rgba(27, 117, 187, 0.12);
+    padding: 7px;
+    cursor: hand;
+  }
+  .selected-tab{
+    color: white;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+  }
