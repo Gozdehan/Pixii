@@ -158,19 +158,6 @@ $(".buyut-kucult").click(function(){
      });  
    });
 
-
-  /* $(".settings").click(function(){
-     if("none" == $(".popoverMenu").css("display")){
-       $(".popoverMenu").css({
-        display:"block"
-       });
-     }
-     else if("block" == $(".popoverMenu").css("display")){
-       $(".popoverMenu").css({
-         display: "none"
-       });
-     } */
-
      var settingsAcik = false;
        function settingsKapat(){
          if(true == settingsAcik){
@@ -510,17 +497,6 @@ $(".log").click(function(){
 });
 $(".log-header .fa-times").click(function(){
    $(".log-page").css({
-    display: "none"
-   });
-});
- 
- $(".help").click(function(){
-  $(".help-page").css({
-    display: "block"
-  });
-});
-$(".help-header .fa-times").click(function(){
-   $(".help-page").css({
     display: "none"
    });
 });

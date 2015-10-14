@@ -145,10 +145,10 @@
        </div>
        <div class="help-content">
          <ul class="helpDialog-tabs">
-           <li><a href="#">Quick Help</a></li>
-           <li><a href="#">Ask a question</a></li>
-           <li><a href="a">Give feedback</a></li>
-           <li><a href="a">Tutorial</a></li>
+           <li><a href="#" data-name="quick help">Quick Help</a></li>
+           <li><a href="#" data-name="ask a question">Ask a question</a></li>
+           <li><a href="#" data-name="give feedback">Give feedback</a></li>
+           <li><a href="#" data-name="totorial">Tutorial</a></li>
          </ul>
          <div class="qH-content">
            <ul>
@@ -175,9 +175,38 @@
              <li>Recurring tasks</li>
              <li>Task templates</li>
              <li>Data security</li>
-
            </ul>
          </div>
+
+         <div class="ask-content">
+            <p>Please check if your question is answered in the <strong>Quick help</strong> tab first </p>
+            <form>
+              <label>Question</label>
+              <textarea placeholder="Write your question here..."></textarea>
+              <p>We will reply to <strong>user@gmail.com</strong> as soon as possible.</p>
+              <button id="askContent-sendQuestion">Send question</button>
+            </form>
+         </div>
+
+         <div class="giveFeedback-content">
+            <form>
+              <ul class="feedbackTypes">
+                <li><label><input type="radio" value="bug">Bug report</label></li>
+                <li><label><input type="radio" value="feature">Feature request</label></li>
+                <li><label><input type="radio" value="praise">Praise</label></li>
+              </ul>
+              <div class="clearfix"></div>
+              <label>Feedback</label>
+              <textarea placeholder="Write your feedback here..."></textarea>
+              <button id="feedbackContent-sendFeedback">Send feedback</button>
+            </form>
+         </div>
+
+         <div class="tutorial-content">
+           <p>A short tutorial for first-time users.</p>
+           <button id="tutorialContent-startTutorial">Start Tutorial</button>
+         </div>
+
        </div>
      </div>
 
@@ -454,7 +483,7 @@
     </div>
   </div>
     <script src="jquery.countdown.min.js"></script>
+    <script src="help.js"></script>
     <script src="kanban.js"></script> 
-    <script type="help.js"></script>
 </body>
 </html>

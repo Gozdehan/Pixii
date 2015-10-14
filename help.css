@@ -59,21 +59,24 @@
   }
   .helpDialog-tabs{
     margin-top: 24px;
+    height: 20px;
   }
   .helpDialog-tabs li{
     float: left;
     margin-left: 25px;
-    font-size: 15px;
-    font-weight: bold;
     text-decoration: underline;
     color: black;
   }
   .helpDialog-tabs li:hover{
     cursor: hand;
   }
+  .helpDialog-tabs li a{
+    font-size: 15px;
+    font-weight: bold;
+  }
   .qH-content{
     display: block;
-    margin-top: 55px;
+    margin-top: 10px;
     height: 315px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -83,14 +86,89 @@
   }
   .qH-content li{
     border-top: 1px solid rgba(27, 117, 187, 0.12);
-    padding: 7px;
+    padding: 8px;
     cursor: hand;
   }
-  .selected-tab{
-    color: white;
+  .ask-content{
+    height: 315px;
+    width: 508px;
+    margin-left: 17px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin-top: 10px;
+    font-size: 13px;
+    display: none;
+  }
+  .ask-content p, .tutorial-content p{
+    margin-top: 8px;
+  }
+  .ask-content textarea, .giveFeedback-content textarea{
+    width: 100%;
+    height: 130px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+  }
+  .ask-content label{
+    margin-left: 2px;
+    display: block;
+    margin-top: 15px;
+  }
+  #askContent-sendQuestion, #feedbackContent-sendFeedback, #tutorialContent-startTutorial{
+    background: linear-gradient(#4c4c4c,#2e2e2e);
+    display: block;
+    border-radius: 5px;
+    border-color: #222;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 15px;
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 5px 14px 6px 13px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+    line-height: 28px;
     text-decoration: none;
-    border: 1px solid;
-    border-radius: 3px;
-    width: 80px;
-    height: 30px;
+    margin-top: 16px;
+  }
+  .giveFeedback-content{
+    height: 315px;
+    width: 508px;
+    margin-left: 17px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin-top: 10px;
+    font-size: 13px;
+    display: none;
+  }
+  .feedbackTypes li{
+    float: left;
+    margin-right: 35px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .feedbackTypes input{
+    margin-right: 7px;
+  }
+  .giveFeedback-content label{
+     margin-left: 2px;
+     display: block;
+     margin-top: 12px;
+  }
+  .tutorial-content{
+    height: 315px;
+    width: 508px;
+    margin-left: 17px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    margin-top: 10px;
+    font-size: 13px;
+    display: none;
+  }
+  .selected-tab{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.78);
+    text-decoration: none;
   }
