@@ -97,3 +97,11 @@ $(".helpDialog-tabs li a").click(function(){
     });
   }
 });
+
+$(document).ready(function(){
+ $(".qH-content ul li").click(function(){
+    $(this).css({
+      height:"100px"
+    });
+ });
+});

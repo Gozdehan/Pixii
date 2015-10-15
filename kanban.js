@@ -134,14 +134,6 @@ $(".buyut-kucult").click(function(){
 
   $("body").click(menuKapat);
 
-  /*$(".body-board").click(function(){
-    if("block" == $(".submenu").css("display")){
-     $(".submenu").css({
-          display:"none"
-        });
-   }
-   });*/
-
    $(document).ready(function(){
      var index = null;
      
@@ -494,6 +486,9 @@ $(".log").click(function(){
   $(".log-page").css({
     display: "block"
   });
+  $(".settings-page").css({
+    display:"none"
+  })
 });
 $(".log-header .fa-times").click(function(){
    $(".log-page").css({
