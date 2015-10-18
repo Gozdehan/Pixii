@@ -153,6 +153,7 @@ img{
 
 #board-table th{
     border: 1px solid grey; 
+    vertical-align: top;
 }
 
 #board-table a, .header-left a{

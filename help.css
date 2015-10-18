@@ -64,7 +64,6 @@
   .helpDialog-tabs li{
     float: left;
     margin-left: 25px;
-    text-decoration: underline;
     color: black;
   }
   .helpDialog-tabs li:hover{
