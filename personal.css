@@ -198,3 +198,27 @@
     font-size: 13px;
     margin-right: 20px;
 }
+.upload-pic{
+  margin-left: 8px;
+}
+.upload-pic p{
+    font: inherit;
+    display: inline-block;
+    margin-top: 12px;
+    width: 300px;
+    font-size: 14px;
+}
+.profileSettings-gravatarPreview {
+    vertical-align: top;
+    width: 48px;
+    height: 48px;
+    padding: 4px;
+    border: 1px solid #EEE;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+.selected-sidebarList{
+      background-color: #08c;
+}
