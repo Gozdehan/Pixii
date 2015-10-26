@@ -143,10 +143,15 @@
   color: white;
   background-color: #ccc;
 }
+.sidebar-list li a.selected-sidebarList{
+  background-color: #08c;
+  color: white;
+}
 .userData-nameAvatar{
   margin-left: 293px;
+  display: none;
 }
-.userData-nameAvatar h3{
+.userData-nameAvatar h3, .userData-dateTime h3, .userData-password h3{
   color: black;
   margin-top: 20px;
 }
@@ -217,8 +222,43 @@
     display: inline-block;
     margin-right: 20px;
 }
-
-
-.selected-sidebarList{
-      background-color: #08c;
+.userData-dateTime{
+  margin-left: 293px;
+  display: none;
+}
+.userData-password{
+  margin-left: 293px;
+}
+.userData-dateTime form{
+  margin: 16px 40px;
+  font-size: 15px;
+}
+.dateTime-info{
+   background-color: #d9edf7;
+    border: 1px solid #bce8f1;
+    border-radius: 4px;
+    color: #3a87ad;
+    padding: 8px 35px 8px 14px;
+    display: inline-block;
+    margin-top: 5;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    font-size: 14px;
+    margin-right: 20px;
+}
+.control-group{
+  padding-top: 27px;
+}
+#dateTime-submit{
+   color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 143px;
+    padding: 6px 9px 6px 9px;
+    background-color: #006fcc;
+    border: 1px solid #04c; 
+    border-radius: 4px;
+}
+.form-password{
+  margin-top: -142px;
 }
