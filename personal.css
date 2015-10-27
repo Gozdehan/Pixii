@@ -30,7 +30,7 @@
    h3{
     float: left;
     margin-top: 8px;
-    color:#E8810F;;
+    color:#E8810F;
    }
   img{
     float: left;
@@ -38,6 +38,34 @@
     width: 40px;
     color: white;,
    }
+   .submenu{
+    float: right;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    border: 1px solid #999;
+    border-color: rgba(0,0,0,0.2);
+    border-radius: 3px;
+    display: none;
+    z-index:4;
+    right: 3px;
+    padding: 3px 0;
+    position: absolute;
+    top: 33px;
+}
+.submenu li a {
+    color: #000;
+    display: block;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 7px 20px;
+    white-space: nowrap;
+    text-decoration: none;
+    }
+    .submenu li a:hover{
+        background: #08C;
+        color: white;
+    }
   #personal-header{
   position: absolute;
   top:0;
@@ -88,7 +116,7 @@
   #personal-content{
   position: relative;
   top: 30px;
-  height: 900px;
+  height: 613px;
   width: 100%;
   background-color: #d3e8f2;
 }
@@ -149,9 +177,9 @@
 }
 .userData-nameAvatar{
   margin-left: 293px;
-  display: none;
+  display: block;
 }
-.userData-nameAvatar h3, .userData-dateTime h3, .userData-password h3{
+.userData-nameAvatar h3, .userData-dateTime h3, .userData-password h3, .userData-email h3, .userData-pGame h3, .userData-remove h3{
   color: black;
   margin-top: 20px;
 }
@@ -181,7 +209,7 @@
     border-radius: 3px;
     width: 270px;
 }
-#changeFullName-submit{
+#changeFullName-submit, #changePassword-submit, #email-submit{
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     display: inline-block;
@@ -191,6 +219,9 @@
     background-color: #006fcc;
     border: 1px solid #04c; 
     border-radius: 4px;
+}
+#email-submit{
+  margin-left: 0 !important;
 }
 .avatar-info{
     background-color: #d9edf7;
@@ -222,12 +253,15 @@
     display: inline-block;
     margin-right: 20px;
 }
-.userData-dateTime{
+.userData-dateTime, .userData-password, .userData-email, .userData-pGame, .userData-remove{
   margin-left: 293px;
   display: none;
 }
-.userData-password{
-  margin-left: 293px;
+.userData-email p{
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: -118px;
+    font-size: 14px;
 }
 .userData-dateTime form{
   margin: 16px 40px;
@@ -245,7 +279,7 @@
     font-size: 14px;
     margin-right: 20px;
 }
-.control-group{
+.form-date .control-group{
   padding-top: 27px;
 }
 #dateTime-submit{
@@ -260,5 +294,40 @@
     border-radius: 4px;
 }
 .form-password{
-  margin-top: -142px;
+  margin-top: -140px;
+}
+.form-password .control-group{
+  margin-bottom: 18px;
+}
+.form-password .control-label{
+  float:left;
+  width:160px;
+  padding-top: 5px;
+  text-align: right;
+}
+.form-password .controls{
+  margin-left: 180px;
+}
+.form-password input[type="password"]{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 4px 6px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+    border-radius: 3px;
+    width: 206px;
+}
+.remove-alert{
+    display: inline-block;
+    font-size: 14px;
+    padding: 11px 40px 11px 30px;
+    margin-right: 17px;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    border-radius: 4px;
+    color: #c09853;
 }
