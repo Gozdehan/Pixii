@@ -147,6 +147,16 @@ $(document).ready(function(){
 });
  
  $(document).ready(function(){
+  var menuDurumAcik = false;
+    function menuKapat () {
+      if (true == menuDurumAcik) {
+        $(".submenu").css({
+          display:"none"
+        });
+
+        menuDurumAcik = false;
+      }  
+    }
    $(".open-close").click(function(){
       if("none" == $(".submenu").css("display")){        
         $(".submenu").css({
@@ -164,3 +174,30 @@ $(document).ready(function(){
 
   $("body").click(menuKapat);
  });
+
+$(document).ready(function(){
+  $(".submenu li:nth-child(2)").click(function(){
+    $(".sidebar-list li a").removeClass("selected-sidebarList");
+        $(".sidebar-list li:nth-child(6)").addClass("selected-sidebarList");
+
+        $(".userData-nameAvatar").css({
+          display:"none"
+        });
+        $(".userData-dateTime").css({
+          display:"none"
+        });
+        $(".userData-password").css({
+          display:"block"
+        });
+        $(".userData-email").css({
+          display:"none"
+        });
+        $(".userData-pGame").css({
+          display:"none"
+        });
+        $(".userData-remove").css({
+          display:"none"
+        });
+  });
+  
+});
