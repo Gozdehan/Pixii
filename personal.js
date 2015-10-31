@@ -153,7 +153,6 @@ $(document).ready(function(){
         $(".submenu").css({
           display:"none"
         });
-
         menuDurumAcik = false;
       }  
     }
@@ -178,7 +177,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".submenu li:nth-child(2)").click(function(){
     $(".sidebar-list li a").removeClass("selected-sidebarList");
-        $(".sidebar-list li:nth-child(6)").addClass("selected-sidebarList");
+        $('.sidebar-list li a[data-sidebar="change"]').addClass('selected-sidebarList');
 
         $(".userData-nameAvatar").css({
           display:"none"
@@ -199,5 +198,4 @@ $(document).ready(function(){
           display:"none"
         });
   });
-  
 });
