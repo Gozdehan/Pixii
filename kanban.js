@@ -514,12 +514,3 @@ $( document ).ready(function() {
       $(this).html(event.strftime('%M:%S'));
   });
 });
-
-$(document).ready(function(){
-  $(".submenu li:nth-child(2)").click(function(){
-    console.log(document.location.hash);
-    if("#change-password" == document.location.hash){
-      alert("eşitlik sağlandı");
-    }
- });
-});

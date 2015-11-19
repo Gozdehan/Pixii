@@ -22,6 +22,5 @@ $(document).ready(function(){
         menuKapat();
       }
    });
-
   $("body").click(menuKapat);
  });

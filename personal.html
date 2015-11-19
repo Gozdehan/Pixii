@@ -39,15 +39,15 @@
        <div class="sidebar">
         <ul class="sidebar-list">
           <li class="nav-header">Personal settings</li>
-          <li><a href="#name&avatar" data-sidebar="avatar">Name & avatar</a></li>
-          <li><a href="#date&time" data-sidebar="date">Date & time</a></li>
+          <li><a href="#name&avatar" data-sidebar="nameAvatar" class="selected-sidebarList">Name & avatar</a></li>
+          <li><a href="#date&time" data-sidebar="dateTime">Date & time</a></li>
           <li><a href="#email&notifications" data-sidebar="email">Email & notifications</a></li>
-          <li><a href="#productivity-game" data-sidebar="game">Productivity game</a></li>
-          <li><a href="#change-password" data-sidebar="change">Change password</a></li>
+          <li><a href="#productivity-game" data-sidebar="pGame">Productivity game</a></li>
+          <li><a href="#change-password" data-sidebar="password">Change password</a></li>
           <li><a href="#remove-account" data-sidebar="remove">Remove account</a></li>
         </ul>
        </div>
-       <div class="userData-nameAvatar">
+       <div class="userData-nameAvatar userData">
           <h3>Profile name</h3>
           <div class="clearfix"></div>
           <div id="profileSettings-changeFullName">
@@ -70,7 +70,7 @@
           <input type="radio" style="margin-right:5px;" name="avatarType" value="gallery">Use avatar from gallery.
        </div>
 
-       <div class="userData-dateTime">
+       <div class="userData-dateTime userData">
          <h3>Date & time</h3> 
          <div class="dateTime-info"><strong>Note:</strong>GözdeFlow automatically use the timezone reported by your browser. Currently your browser reports GMT+02:00</div>
          <form class="form-date">
@@ -92,7 +92,7 @@
          </form>
        </div>
        
-       <div class="userData-email">
+       <div class="userData-email userData">
           <h3>Email address</h3>
           <p>Your email adress is: <strong>gozdehanozturk@gmail.com</strong></p>
           <p style="margin-left: 1px; margin-top: 4px;">The email address is used when logging in to GözdeFlow and all notifications will be sent to it.</p>
@@ -102,11 +102,11 @@
           <p style="margin-left:0; margin-top:5px;">Please check the events below where you like to receive a mail. You only get mail when someone else is causing the event to happen.</p>
        </div>
 
-       <div class="userData-pGame">
+       <div class="userData-pGame userData">
           <h3>Productivity Game</h3>
        </div>
 
-       <div class="userData-password">
+       <div class="userData-password userData">
         <h3>Change password</h3>
         <div class="clearfix"></div>
         <form class="form-password">
@@ -117,7 +117,7 @@
         </form>
        </div>
 
-       <div class="userData-remove">
+       <div class="userData-remove userData">
          <h3>Remove account</h3>
          <div class="remove-alert">
            <p>You can't remove your account while you still have active boards. To be able to remove your account, please delete or unregister from the following board(s):</p>
