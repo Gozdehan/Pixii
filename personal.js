@@ -72,3 +72,32 @@ $(document).ready(function(){
         });
   });
 });
+
+$(document).ready(function(){
+   var selectMenuAcik = false;
+      function selectKapat() {
+        if(true == selectMenuAcik){
+          $(".selectBoardMenu").css({
+            display: "none"
+          });
+          selectMenuAcik = false;
+        }
+      }
+
+ $(".selectBoard").click(function(){
+   if("none" == $(".selectBoardMenu").css("display")){
+    $(".selectBoardMenu").css({
+      display: "block"
+    });
+
+     setTimeout(function(){
+    selectMenuAcik = true;
+   },10);
+  }
+  else if("block" == $(".selectBoardMenu").css("display")){
+    selectKapat();
+  }
+});
+
+$("body").click(selectKapat);
+});
