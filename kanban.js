@@ -146,6 +146,22 @@ $(".buyut-kucult").click(function(){
      $(".saveClose").click(function(){
       console.log("#board-table tbody th:nth-child(" + (index + 1) + ")");
         $("#board-table tbody th:nth-child(" + (index + 1) + ")").append("<div class='deneme'>deneme</div>");
+        var data ={
+          name: $('textarea[name="generalname"]').val(),
+          desc: $('textarea[name="generaldesc"]').val(),
+          color: $('textarea[name="color"]').val(),
+          responsible: $('textarea[name="responsible"]').val()
+        }
+
+        $.ajax({ // ajax işlemi başlar
+          type:'POST', // veri gönderme tipimiz. get olabilirdi json olabilirdi. ama biz post kullanıyoruz
+          url:'addTask.php', // post edilecek adres
+          data: data, //post edilecek veriler
+          success:function(cevap){// işlem başarılıysa
+            //$("#sonuc").html(cevap); //sonuc id'sine ajaxPost.php den dönen verileri basıyoruz.
+            alert(cevap); 
+          }
+        });
         return false;     
      });  
    });
