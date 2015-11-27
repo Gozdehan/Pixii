@@ -1,7 +1,7 @@
 <?php
-  $dsn = 'mysql:dbname=gozdeflow, host=localhost';
+  $dsn = 'mysql:dbname=sdfsfsfsdf, host=localhost';
   $user = 'root';
-  $password = ' ';
+  $password = '';
      try{
      	$dbh = new PDO($dsn,$user,$password);
      	$sql = $dbh->prepare("INSERT INTO general(name,description,color,responsible) VALUES(:name,:description,:color,:responsible)");
